@@ -1,0 +1,19 @@
+{
+  "name": "imbala",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "eleventy:default": "npx eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0"
+  },
+  "dependencies": {
+    "accessible-menu": "^1.1.0"
+  }
+}

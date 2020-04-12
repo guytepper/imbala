@@ -1,0 +1,106 @@
+:root {
+  --nav-width: 260px;
+}
+
+body {
+  height: 100vh;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-image: url('/images/imbala-bg.jpg');
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  overflow: hidden;
+}
+
+.site-header {
+  height: 70px;
+}
+
+.homepage-content {
+  text-align: center;
+  padding: 0 8vw;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: -0.96px;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.homepage-content-intro {
+  margin-bottom: 60px;
+}
+
+.homepage-content-address {
+  font-size: 20px;
+  letter-spacing: -0.8px;
+  font-style: normal;
+}
+
+.homepage-content-address-line {
+  display: block;
+  margin: -10px 0;
+}
+
+.homepage-logo {
+  width: 100%;
+  transform: translateY(100px);
+  animation: rotate 2s 0 ease-in;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-position: center;
+  }
+}
+
+.site-nav-menu {
+  height: 100vh;
+  width: var(--nav-width);
+  transform: translateX(calc(-20px - var(--nav-width)));
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: #47a3da;
+  transition: all 0.3s ease;
+}
+
+.site-nav-menu a {
+  display: block;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+.site-nav-menu a:hover {
+  background: #258ecd;
+}
+
+.site-nav-menu a:active {
+  background: #afdefa;
+  color: #47a3da;
+}
+
+.menu-active .site-nav-menu {
+  transform: translateX(0);
+}
+
+.nav-close-button {
+  position: absolute;
+  top: 0;
+  height: 50px;
+  width: 50px;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-image: url('/images/close-icon.svg');
+  background-position: 50%;
+  background-size: 40px;
+  transition: all 0.3s;
+  transform: translateX(-60px);
+}
+
+.menu-active .nav-close-button {
+  display: block;
+  transform: translateX(var(--nav-width));
+}
