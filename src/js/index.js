@@ -9,3 +9,7 @@ function toggleMenu() {
 
 menuBtn.onclick = toggleMenu;
 navClosebtn.onclick = toggleMenu;
+
+document.addEventListener('DOMContentLoaded', () => {
+	document.querySelector('body').classList.toggle('no-js')
+})
