@@ -64,7 +64,7 @@ body {
   top: 0;
   left: 0;
   z-index: 100;
-  background: #F47D29;
+  background: #f47d29;
   transition: all 0.3s ease;
 }
 
@@ -105,14 +105,15 @@ body {
   background-position: 50%;
   background-size: 40px;
   border: none;
+  cursor: pointer;
 }
 
 .nav-close-button {
-  position: absolute;
+  position: fixed;
   top: 0;
   height: 50px;
-  width: 50px;  
-  background-color: #F47D29;
+  width: 50px;
+  background-color: #f47d29;
   background-repeat: no-repeat;
   background-image: url('/images/close-icon.svg');
   background-position: 50%;
@@ -125,4 +126,24 @@ body {
 .menu-active .nav-close-button {
   display: block;
   transform: translateX(calc(var(--nav-width) - 10px));
+  z-index: 100;
+  cursor: pointer;
+}
+
+.faded-background {
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+  opacity: 0;
+  background-color: rgba(48, 48, 48, 0.67);
+  transition: opacity 0.25s ease-in;
+}
+
+.menu-active .faded-background {
+  visibility: visible;
+  opacity: 1;
 }
