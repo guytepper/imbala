@@ -12,6 +12,7 @@ html {
 }
 
 body {
+  height: 100vh;
   font-family: Georgia, 'Times New Roman', Times, serif;
   background-image: url('/images/imbala-bg.jpg');
   background-position: right;
