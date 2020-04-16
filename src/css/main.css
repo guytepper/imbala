@@ -2,6 +2,22 @@
   --nav-width: 260px;
 }
 
+@font-face {
+  font-family: 'Simpler';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Simpler Regular'), url('Simpler-Regular.woff') format('woff');
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   height: 100vh;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -10,7 +26,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
-  overflow: hidden;
 }
 
 .site-header {
@@ -27,10 +42,6 @@ body {
   overflow: hidden;
 }
 
-.homepage-content-intro {
-  margin-bottom: 60px;
-}
-
 .homepage-content-address {
   font-size: 20px;
   letter-spacing: -0.8px;
@@ -43,9 +54,8 @@ body {
 }
 
 .homepage-logo {
-  width: 100%;
-  transform: translateY(100px);
-  animation: rotate 2s 0 ease-in;
+  width: 80%;
+  margin: 30px 0;
 }
 
 @media (min-width: 768px) {
@@ -62,15 +72,24 @@ body {
   top: 0;
   left: 0;
   z-index: 100;
-  background: #47a3da;
+  background: #f47d29;
+  font-family: Simpler, -apple-system, system-ui, sans-serif;
   transition: all 0.3s ease;
 }
 
-.site-nav-menu a {
-  display: block;
+.no-js .menu-btn {
+  display: none;
+}
+
+.site-nav-menu__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
   color: #fff;
-  font-size: 1.1em;
+  font-size: 24px;
   font-weight: 300;
+  text-decoration: none;
 }
 
 .site-nav-menu a:hover {
@@ -86,21 +105,54 @@ body {
   transform: translateX(0);
 }
 
+.menu-btn {
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url('/images/menu-icon.svg');
+  background-position: 50%;
+  background-size: 40px;
+  border: none;
+  cursor: pointer;
+}
+
 .nav-close-button {
-  position: absolute;
+  position: fixed;
   top: 0;
   height: 50px;
   width: 50px;
-  background-color: #000;
+  background-color: transparent;
   background-repeat: no-repeat;
   background-image: url('/images/close-icon.svg');
   background-position: 50%;
   background-size: 40px;
   transition: all 0.3s;
   transform: translateX(-60px);
+  border: none;
 }
 
 .menu-active .nav-close-button {
   display: block;
-  transform: translateX(var(--nav-width));
+  transform: translateX(calc(var(--nav-width) - 10px));
+  z-index: 100;
+  cursor: pointer;
+}
+
+.faded-background {
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+  opacity: 0;
+  background-color: rgba(48, 48, 48, 0.67);
+  transition: opacity 0.25s ease-in;
+}
+
+.menu-active .faded-background {
+  visibility: visible;
+  opacity: 1;
 }
