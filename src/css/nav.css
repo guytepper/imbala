@@ -1,0 +1,99 @@
+.site-nav-menu {
+  height: 100vh;
+  width: var(--nav-width);
+  transform: translateX(calc(-20px - var(--nav-width)));
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: #f47d29;
+  font-family: Simpler, -apple-system, system-ui, sans-serif;
+  transition: all 0.3s ease;
+}
+
+.no-js .menu-btn {
+  display: none;
+}
+
+.site-nav-menu__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.site-nav-menu a:hover {
+  background: #258ecd;
+}
+
+.site-nav-menu a:active {
+  background: #afdefa;
+  color: #47a3da;
+}
+
+.menu-active .site-nav-menu {
+  transform: translateX(0);
+}
+
+.menu-btn {
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url('/images/menu-icon.svg');
+  background-position: 50%;
+  background-size: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-close-button {
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url('/images/close-icon.svg');
+  background-position: 50%;
+  background-size: 40px;
+  transition: all 0.3s;
+  transform: translateX(-60px);
+  border: none;
+}
+
+.menu-active .nav-close-button {
+  display: block;
+  transform: translateX(calc(var(--nav-width) - 10px));
+  z-index: 100;
+  cursor: pointer;
+}
+
+.faded-background {
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+  opacity: 0;
+  background-color: rgba(48, 48, 48, 0.67);
+  transition: opacity 0.25s ease-in;
+}
+
+.menu-active .faded-background {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .menu-btn,
+  .nav-close-button {
+    display: none;
+  }
+}
