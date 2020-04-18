@@ -27,7 +27,7 @@ html {
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   font-family: var(--main-font);
   background-image: url('/images/imbala-bg.jpg');
   background-position: right;
@@ -54,46 +54,74 @@ body {
   font-size: 20px;
   letter-spacing: -0.8px;
   font-style: normal;
+  color: #ecf0f1;
 }
 
 .homepage-content-address-line {
   display: block;
-  margin: -10px 0;
+  margin: -11px 0;
 }
 
 .homepage-logo {
   width: 80%;
   margin: 30px 0;
+  /* opacity: 0.95; */
+  backdrop-filter: blur(0.8);
+}
+
+.homepage-content-slogan {
+  display: none;
 }
 
 @media (min-width: 768px) {
+  .homepage-logo {
+    width: 300px;
+  }
+
+  .homepage-content-slogan {
+    display: block;
+    max-width: 350px;
+    margin: 0 auto 20px;
+    font-size: 23px;
+    font-weight: 100;
+    font-style: italic;
+    line-height: unset;
+    color: #ecf0f1;
+  }
+}
+
+@media (min-width: 1024px) {
   body {
+    height: calc(100vh - 10px);
+    padding: 10px 10px 0;
+    margin-bottom: 0;
     background-position: center;
   }
 
   .homepage-logo {
-    width: 360px;
+    width: 290px;
+    margin: 15px 0 10px;
   }
 
   .homepage-content-intro {
     margin: 0 auto;
     max-width: 630px;
+    font-size: 27px;
   }
 
-  .homepage-content-slogan {
-    margin: 0 auto 20px;
-    max-width: 500px;
-    font-style: italic;
-    font-weight: 100;
+  .site-wrapper {
+    min-height: 95vh;
+    padding: 12.5px;
+    background: #d1a88724;
   }
 }
 
-@media (min-width: 768px) {
-  body {
-    padding: 10px;
+@media (max-height: 415px) and (orientation: landscape) {
+  .homepage-logo {
+    width: 230px;
   }
-  .site-wrapper {
-    padding: 12.5px;
-    background: #f5882f24;
+
+  .homepage-content-address {
+    margin-bottom: 20px;
   }
 }
