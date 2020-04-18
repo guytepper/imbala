@@ -1,5 +1,7 @@
 :root {
   --nav-width: 260px;
+  --main-font: Georgia, 'Times New Roman', Times, serif;
+  --sub-font: Simpler, -apple-system, system-ui, sans-serif;
 }
 
 @font-face {
@@ -26,7 +28,7 @@ html {
 
 body {
   height: 100vh;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: var(--main-font);
   background-image: url('/images/imbala-bg.jpg');
   background-position: right;
   background-size: cover;
