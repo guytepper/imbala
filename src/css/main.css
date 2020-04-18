@@ -1,12 +1,20 @@
 :root {
   --nav-width: 260px;
+  --main-font: Georgia, 'Times New Roman', Times, serif;
+  --sub-font: Simpler, -apple-system, system-ui, sans-serif;
 }
 
 @font-face {
   font-family: 'Simpler';
   font-style: normal;
   font-weight: normal;
-  src: local('Simpler Regular'), url('Simpler-Regular.woff') format('woff');
+  src: local('Simpler Regular'), url('css/Simpler-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Simpler';
+  font-weight: 300;
+  src: local('Simpler Light'), url('css/Simpler-Light.woff') format('woff');
 }
 
 html {
@@ -19,8 +27,8 @@ html {
 }
 
 body {
-  height: 100vh;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  min-height: 100vh;
+  font-family: var(--main-font);
   background-image: url('/images/imbala-bg.jpg');
   background-position: right;
   background-size: cover;
@@ -46,113 +54,74 @@ body {
   font-size: 20px;
   letter-spacing: -0.8px;
   font-style: normal;
+  color: #ecf0f1;
 }
 
 .homepage-content-address-line {
   display: block;
-  margin: -10px 0;
+  margin: -11px 0;
 }
 
 .homepage-logo {
   width: 80%;
   margin: 30px 0;
+  /* opacity: 0.95; */
+  backdrop-filter: blur(0.8);
 }
 
-@media (min-width: 768px) {
-  body {
-    background-position: center;
-  }
-}
-
-.site-nav-menu {
-  height: 100vh;
-  width: var(--nav-width);
-  transform: translateX(calc(-20px - var(--nav-width)));
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  background: #f47d29;
-  font-family: Simpler, -apple-system, system-ui, sans-serif;
-  transition: all 0.3s ease;
-}
-
-.no-js .menu-btn {
+.homepage-content-slogan {
   display: none;
 }
 
-.site-nav-menu__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60px;
-  color: #fff;
-  font-size: 24px;
-  font-weight: 300;
-  text-decoration: none;
+@media (min-width: 768px) {
+  .homepage-logo {
+    width: 300px;
+  }
+
+  .homepage-content-slogan {
+    display: block;
+    max-width: 350px;
+    margin: 0 auto 20px;
+    font-size: 23px;
+    font-weight: 100;
+    font-style: italic;
+    line-height: unset;
+    color: #ecf0f1;
+  }
 }
 
-.site-nav-menu a:hover {
-  background: #258ecd;
+@media (min-width: 1024px) {
+  body {
+    height: calc(100vh - 10px);
+    padding: 10px 10px 0;
+    margin-bottom: 0;
+    background-position: center;
+  }
+
+  .homepage-logo {
+    width: 290px;
+    margin: 15px 0 10px;
+  }
+
+  .homepage-content-intro {
+    margin: 0 auto;
+    max-width: 630px;
+    font-size: 27px;
+  }
+
+  .site-wrapper {
+    min-height: 95vh;
+    padding: 12.5px;
+    background: #d1a88724;
+  }
 }
 
-.site-nav-menu a:active {
-  background: #afdefa;
-  color: #47a3da;
-}
+@media (max-height: 415px) and (orientation: landscape) {
+  .homepage-logo {
+    width: 230px;
+  }
 
-.menu-active .site-nav-menu {
-  transform: translateX(0);
-}
-
-.menu-btn {
-  height: 50px;
-  width: 50px;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-image: url('/images/menu-icon.svg');
-  background-position: 50%;
-  background-size: 40px;
-  border: none;
-  cursor: pointer;
-}
-
-.nav-close-button {
-  position: fixed;
-  top: 0;
-  height: 50px;
-  width: 50px;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-image: url('/images/close-icon.svg');
-  background-position: 50%;
-  background-size: 40px;
-  transition: all 0.3s;
-  transform: translateX(-60px);
-  border: none;
-}
-
-.menu-active .nav-close-button {
-  display: block;
-  transform: translateX(calc(var(--nav-width) - 10px));
-  z-index: 100;
-  cursor: pointer;
-}
-
-.faded-background {
-  position: fixed;
-  visibility: hidden;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 99;
-  opacity: 0;
-  background-color: rgba(48, 48, 48, 0.67);
-  transition: opacity 0.25s ease-in;
-}
-
-.menu-active .faded-background {
-  visibility: visible;
-  opacity: 1;
+  .homepage-content-address {
+    margin-bottom: 20px;
+  }
 }
