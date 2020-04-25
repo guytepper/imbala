@@ -4,7 +4,6 @@
   flex-direction: column;
   align-items: center;
   padding: 10px;
-  background-color: #fff4e9;
 }
 
 .site-nav-menu {
@@ -15,7 +14,7 @@
   top: 0;
   left: 0;
   z-index: 100;
-  background: #f47d29;
+  background-color: #fff4e9;
   font-family: Simpler, -apple-system, system-ui, sans-serif;
   transition: all 0.3s ease;
 }
@@ -25,8 +24,7 @@
 }
 
 .nav-logo {
-  width: 220px;
-  margin-bottom: 40px;
+  display: none;
 }
 
 .site-nav-menu__link {
@@ -78,6 +76,7 @@
   transition: all 0.3s;
   transform: translateX(-60px);
   border: none;
+  outline: none;
 }
 
 .menu-active .nav-close-button {
@@ -113,6 +112,13 @@
 
   .site-nav {
     position: unset;
+    background-color: #fff4e9;
+  }
+
+  .nav-logo {
+    display: block;
+    width: 220px;
+    margin-bottom: 40px;
   }
 
   .site-nav-menu {
@@ -122,7 +128,6 @@
     transform: none;
     display: flex;
     flex-direction: column;
-    background: transparent;
     transition: none;
   }
 
