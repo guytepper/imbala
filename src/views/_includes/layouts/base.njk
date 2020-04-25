@@ -1,20 +1,13 @@
-{% set css %}
-  {% include "../../css/main.css" %}
-  {% include "../../css/nav.css" %}
-{% endset %}
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/nav.css">
     <script src="/js/index.js" defer></script>
     <title>Imbala</title>
   </head>
-  <style>
-  {{ css | safe }}
-  </style>  
   <body class="no-js">
   <div class="site-wrapper">
     <header class="site-header">
