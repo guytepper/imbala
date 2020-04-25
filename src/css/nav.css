@@ -1,3 +1,7 @@
+.site-nav {
+  position: absolute;
+}
+
 .site-nav-menu {
   height: 100vh;
   width: var(--nav-width);
@@ -98,10 +102,12 @@
   }
 
   .site-header {
-    height: auto;
+    /* height: auto;
     padding: 5px 0 15px;
-    margin: 0 20px 40px;
-    border-bottom: 1px solid #f3f3f357;
+    margin: 0 20px 40px; */
+    /* border-bottom: 1px solid #f3f3f357; */
+    width: 300px;
+    height: 100vh;
   }
 
   .site-nav-menu {
@@ -110,13 +116,13 @@
     position: relative;
     transform: none;
     display: flex;
+    flex-direction: column;
     background: transparent;
     transition: none;
   }
 
   .site-nav-menu__link {
     height: auto;
-    margin-right: 20px;
     font-size: 20px;
     text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
   }
