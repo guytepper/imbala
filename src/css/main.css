@@ -37,56 +37,6 @@ body {
   color: #fff;
 }
 
-.homepage-content {
-  text-align: center;
-  padding: 0 8vw;
-  font-size: 30px;
-  line-height: 40px;
-  letter-spacing: -0.96px;
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-}
-
-.homepage-content-address {
-  font-size: 20px;
-  letter-spacing: -0.8px;
-  font-style: normal;
-  color: #ecf0f1;
-}
-
-.homepage-content-address-line {
-  display: block;
-  margin: -11px 0;
-}
-
-.homepage-logo {
-  width: 80%;
-  margin: 30px 0;
-  /* opacity: 0.95; */
-  backdrop-filter: blur(0.8);
-}
-
-.homepage-content-slogan {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .homepage-logo {
-    width: 300px;
-  }
-
-  .homepage-content-slogan {
-    display: block;
-    max-width: 350px;
-    margin: 0 auto 20px;
-    font-size: 23px;
-    font-weight: 100;
-    font-style: italic;
-    line-height: unset;
-    color: #ecf0f1;
-  }
-}
-
 @media (min-width: 1024px) {
   body {
     background-position: center;
@@ -107,30 +57,9 @@ body {
     grid-area: site-content;
   }
 
-  .homepage-logo {
-    width: 290px;
-    margin: 15px 0 10px;
-  }
-
-  .homepage-content-intro {
-    margin: 0 auto;
-    max-width: 630px;
-    font-size: 27px;
-  }
-
   .main {
     min-height: 95vh;
     padding: 12.5px;
     background: #d1a88724;
-  }
-}
-
-@media (max-height: 415px) and (orientation: landscape) {
-  .homepage-logo {
-    width: 230px;
-  }
-
-  .homepage-content-address {
-    margin-bottom: 20px;
   }
 }

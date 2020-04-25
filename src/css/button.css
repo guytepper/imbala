@@ -1,0 +1,17 @@
+.imbala-button {
+  width: 280px;
+  height: 65px;
+  appearance: none;
+  background: transparent;
+  font-family: var(--sub-font);
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.imbala-button:hover {
+  background: #ff88006c;
+}
