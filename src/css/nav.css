@@ -1,3 +1,11 @@
+.site-nav {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
 .site-nav-menu {
   height: 100vh;
   width: var(--nav-width);
@@ -6,7 +14,7 @@
   top: 0;
   left: 0;
   z-index: 100;
-  background: #f47d29;
+  background-color: #fff4e9;
   font-family: Simpler, -apple-system, system-ui, sans-serif;
   transition: all 0.3s ease;
 }
@@ -15,14 +23,18 @@
   display: none;
 }
 
+.nav-logo {
+  display: none;
+}
+
 .site-nav-menu__link {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 60px;
-  color: #fff;
+  color: #242424;
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 400;
   text-decoration: none;
 }
 
@@ -64,6 +76,7 @@
   transition: all 0.3s;
   transform: translateX(-60px);
   border: none;
+  outline: none;
 }
 
 .menu-active .nav-close-button {
@@ -97,32 +110,33 @@
     display: none;
   }
 
-  .site-header {
-    height: auto;
-    padding: 5px 0 15px;
-    margin: 0 20px 40px;
-    border-bottom: 1px solid #f3f3f357;
+  .site-nav {
+    position: unset;
+    background-color: #fff4e9;
+  }
+
+  .nav-logo {
+    display: block;
+    width: 220px;
+    margin-bottom: 40px;
   }
 
   .site-nav-menu {
-    width: auto;
+    width: 100%;
     height: auto;
     position: relative;
     transform: none;
     display: flex;
-    background: transparent;
+    flex-direction: column;
     transition: none;
   }
 
   .site-nav-menu__link {
-    height: auto;
-    margin-right: 20px;
-    font-size: 20px;
-    text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    font-size: 21px;
   }
 
   .site-nav-menu__link:hover {
-    color: #e9e9e9;
+    color: #000000;
     background: none;
   }
 }

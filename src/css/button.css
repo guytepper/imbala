@@ -1,0 +1,19 @@
+.imbala-button {
+  width: 280px;
+  height: 65px;
+  margin: 10px;
+  appearance: none;
+  background: #ff8800ce;
+  font-family: var(--sub-font);
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  border: 5px solid white;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.imbala-button:hover {
+  background: #ff88006c;
+}

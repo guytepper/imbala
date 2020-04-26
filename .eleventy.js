@@ -7,8 +7,7 @@ module.exports = function (eleventyConfig) {
     dir: {
       input: 'src/views',
       output: 'dist',
-      includes: '_includes/partials',
-      layouts: '_layouts',
+      includes: '_includes',
     },
     templateFormats: ['md', 'njk'],
     markdownTemplateEngine: 'njk',
