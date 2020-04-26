@@ -39,6 +39,30 @@
   font-weight: 400;
 }
 
+.cafe-menu-title {
+  font-family: var(--main-font);
+  font-size: 33px;
+  color: #454545;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0px 1px 0px 0px #D3D3D3, 0px 5px 0px 0px #fff, 0px 6px 0px 0px #D3D3D3
+}
+
+.cafe-menu-item-title {
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.cafe-menu-item-desc {
+  display: flex;
+  flex-direction: column;  
+}
+
+.cafe-menu-item-desc-text, .cafe-menu-item-desc-price {  
+  margin: 0;
+  font-size: 20px;
+  font-weight: 100;
+}
 
 @media (min-width: 1024px) {
   .cafe-header {
@@ -58,6 +82,9 @@
   flex-direction: row;
   justify-content: space-between;
   font-weight: 100;
+}
+
+.cafe-menu-item-desc {
 }
 }
 
