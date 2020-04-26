@@ -12,3 +12,9 @@
   text-align: center;
   background: #361d0954;
 }
+
+.page-content {
+  padding: 15px 30px;
+  font-family: var(--sub-font);
+  color: #000;
+}
