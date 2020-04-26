@@ -1,14 +1,9 @@
 .cafe-header {
   display: flex;
-}
-
-.cafe-header-intro,
-.cafe-header-hours {
-  width: 50%;
+  flex-direction: column;
 }
 
 .cafe-header-intro {
-  margin-right: 40px;
   font-size: 18px;
   line-height: 30px;
 }
@@ -35,9 +30,34 @@
 
 .cafe-header-hours-entry {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   margin-bottom: 8px; 
 }
 
+.cafe-header-hours-day {
+  margin-bottom: 5px;
+  font-weight: 400;
+}
 
+
+@media (min-width: 1024px) {
+  .cafe-header {
+    flex-direction: row;
+  }
+
+.cafe-header-intro,
+.cafe-header-hours {
+  width: 50%;
+}
+
+.cafe-header-intro {
+  margin-right: 40px;
+}
+
+.cafe-header-hours-entry {
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 100;
+}
+}
 
