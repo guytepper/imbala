@@ -16,7 +16,7 @@
       {% include "nav.njk" %}
     </header>
     <main class="site-content">
-      {{ content | safe }}
+    {% block content %}{% endblock %}
     </main>
     </body>
   </div>

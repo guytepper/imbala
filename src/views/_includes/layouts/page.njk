@@ -1,4 +1,7 @@
----
-layout: layouts/base.njk
----
-hi
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+<div class="page-hero">
+  {% block pageTitle %}{% endblock %}
+</div>
+{% endblock %}
