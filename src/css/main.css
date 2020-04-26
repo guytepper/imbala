@@ -28,100 +28,34 @@ html {
 
 body {
   min-height: 100vh;
+  margin: 0;
   font-family: var(--main-font);
-  background-image: url('/images/imbala-bg.jpg');
-  background-position: right;
-  background-size: cover;
-  background-repeat: no-repeat;
   color: #fff;
-}
-
-.site-header {
-  height: 70px;
-}
-
-.homepage-content {
-  text-align: center;
-  padding: 0 8vw;
-  font-size: 30px;
-  line-height: 40px;
-  letter-spacing: -0.96px;
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-}
-
-.homepage-content-address {
-  font-size: 20px;
-  letter-spacing: -0.8px;
-  font-style: normal;
-  color: #ecf0f1;
-}
-
-.homepage-content-address-line {
-  display: block;
-  margin: -11px 0;
-}
-
-.homepage-logo {
-  width: 80%;
-  margin: 30px 0;
-  /* opacity: 0.95; */
-  backdrop-filter: blur(0.8);
-}
-
-.homepage-content-slogan {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .homepage-logo {
-    width: 300px;
-  }
-
-  .homepage-content-slogan {
-    display: block;
-    max-width: 350px;
-    margin: 0 auto 20px;
-    font-size: 23px;
-    font-weight: 100;
-    font-style: italic;
-    line-height: unset;
-    color: #ecf0f1;
-  }
 }
 
 @media (min-width: 1024px) {
   body {
-    height: calc(100vh - 10px);
-    padding: 10px 10px 0;
-    margin-bottom: 0;
     background-position: center;
   }
 
-  .homepage-logo {
-    width: 290px;
-    margin: 15px 0 10px;
-  }
-
-  .homepage-content-intro {
-    margin: 0 auto;
-    max-width: 630px;
-    font-size: 27px;
-  }
-
   .site-wrapper {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: [site-nav] 300px [site-content] auto;
+    grid-template-rows: [site-nav site-content] 1fr;
+  }
+
+  .site-nav {
+    grid-area: site-nav;
+  }
+
+  .site-content {
+    grid-area: site-content;
+  }
+
+  .main {
     min-height: 95vh;
     padding: 12.5px;
     background: #d1a88724;
-  }
-}
-
-@media (max-height: 415px) and (orientation: landscape) {
-  .homepage-logo {
-    width: 230px;
-  }
-
-  .homepage-content-address {
-    margin-bottom: 20px;
   }
 }
