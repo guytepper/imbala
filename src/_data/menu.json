@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Sandwich w/ tahini and vegetables",
+    "description": "tomato, cucumber, radishes and parsley",
+    "price": {
+      "regular": 18,
+      "member": 15
+    }
+  },
+  {
+    "title": "Lentil and veggies salad",
+    "description": "black lentils, fresh vegetables, antipasti, parsley, lemon and tahini",
+    "price": {
+      "regular": 25,
+      "member": 20
+    }
+  }
+]
