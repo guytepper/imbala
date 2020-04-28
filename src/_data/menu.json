@@ -1,18 +1,157 @@
 [
   {
-    "title": "Sandwich w/ tahini and vegetables",
-    "description": "tomato, cucumber, radishes and parsley",
-    "price": {
-      "regular": 18,
-      "member": 15
-    }
+    "title": "Food",
+    "items": [
+      {
+        "title": "Granola Bowl",
+        "description": "homemade granola with fresh orange/cranberries & milk of your choice. <br/>Served with date honey on the side",
+        "price": {
+          "regular": 15,
+          "member": 12
+        }
+      },
+      {
+        "title": "Sandwich w/ tahini and vegetables",
+        "description": "tomato, cucumber, radishes and parsley",
+        "price": {
+          "regular": 18,
+          "member": 15
+        }
+      },
+      {
+        "title": "Make your own Sandwich",
+        "description": "custom sandwich - you decide what we put in from our kitchen",
+        "price": {
+          "regular": 25,
+          "member": 20
+        }
+      },
+      {
+        "title": "Hot Dog",
+        "description": "carrot hot dog or Smoked tofu (choose one).<br/> Served with ketchup, vegan mayo, mustard, pickles, pickled onions and baked cabbage",
+        "price": {
+          "regular": 25,
+          "member": 20
+        }
+      },
+      {
+        "title": "Lentil and veggies salad",
+        "description": "black lentils, fresh vegetables, antipasti, parsley, lemon and tahini",
+        "price": {
+          "regular": 25,
+          "member": 20
+        }
+      },
+      {
+        "title": "Veggie Patties plate",
+        "description": "veggie patties, tahini and vegetables",
+        "price": {
+          "regular": 18,
+          "member": 15
+        }
+      },
+      {
+        "title": "Imbala Bowl",
+        "description": "rice noodles, cucumber and carrot shredding, baked cabbage, pickled onions, smoked tofu and soy-sesame-garlic sauce",
+        "price": {
+          "regular": 25,
+          "member": 20
+        }
+      },
+      {
+        "title": "Pickles and olive bowl",
+        "description": "salty. yummy.",
+        "price": {
+          "regular": 5
+        }
+      },
+      {
+        "title": "Muffin",
+        "description": "don't leave without trying them.",
+        "price": {
+          "regular": 10,
+          "member": 8
+        }
+      },
+      {
+        "title": "Cookie",
+        "description": "reach nirvana in 2 bites.<br/> <i>~ 3 cookies for 10 ~</i>",
+        "price": {
+          "regular": 4
+        }
+      }
+    ]
   },
   {
-    "title": "Lentil and veggies salad",
-    "description": "black lentils, fresh vegetables, antipasti, parsley, lemon and tahini",
-    "price": {
-      "regular": 25,
-      "member": 20
-    }
+    "title": "Drinks",
+    "items": [
+      {
+        "title": "Orange Juice / Lemonade",
+        "description": "freshly squeezed",
+        "price": {
+          "regular": 8
+        }
+      },
+      {
+        "title": "Tea",
+        "price": {
+          "regular": "cup 5nis / pot 10"
+        }
+      },
+      {
+        "title": "Black Coffee",
+        "price": {
+          "regular": 5,
+          "member": 6
+        }
+      },
+      {
+        "title": "Espresso",
+        "description": "double for 9",
+        "price": {
+          "regular": "single 8nis / double 9"
+        }
+      },
+      {
+        "title": "Americano",
+        "price": {
+          "regular": "small 5nis / large 10"
+        }
+      },
+      {
+        "title": "Cappuccino",
+        "price": {
+          "regular": "small 10nis / large 13"
+        }
+      },
+      {
+        "title": "Hot Chocolate",
+        "price": {
+          "regular": "14"
+        }
+      },
+      {
+        "title": "Iced Coffee",
+        "price": {
+          "regular": "12"
+        }
+      },
+      {
+        "title": "Iced Tea",
+        "description": "add 8nis for a shot of gin whisky!",
+        "price": {
+          "regular": "8"
+        }
+      }
+    ]
+  },
+  {
+    "title": "Alcohol",
+    "items": [
+      { "title": "½ San Miguel (can)", "price": { "regular": 18, "member": 15 } },
+      { "title": "⅓ Taybeh (bottle)", "price": { "regular": 20, "member": 18 } },
+      { "title": "Savanna Cider", "price": { "regular": 24, "member": 20 } },
+      { "title": "Red / White Wine", "price": { "regular": 18, "member": 15 } }
+    ]
   }
 ]

@@ -38,20 +38,24 @@ backgroundImage: '/images/cafe-thumb.jpg'
 
 <div class="cafe-menu">
   <div>
-    <h2 class="cafe-menu-section-title">Food</h2>
+    {%- for section in menu -%}
+    <h2 class="cafe-menu-section-title">{{ section.title }}</h2>
+
     <div class="cafe-menu-section">
-      {%- for item in menu -%}
+      {%- for item in section.items -%}
       <div class="cafe-menu-item">
         <h3 class="cafe-menu-item-title">{{ item.title }}</h3>
         <div class="cafe-menu-item-desc">
-          <h5 class="cafe-menu-item-desc-text">{{ item.description }}</h5>
+          <h5 class="cafe-menu-item-desc-text">{{ item.description | safe }}</h5>
           <span class="cafe-menu-item-desc-price"
-            >{{ item.price.regular }}/{{ item.price.member }}nis</span
+            >{{ item.price.regular }}{% if item.price.member %}/{{ item.price.member }}{% endif
+            %}nis</span
           >
         </div>
       </div>
       {%- endfor -%}
     </div>
+    {%- endfor -%}
   </div>
   {% endblock %}
 </div>
