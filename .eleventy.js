@@ -9,7 +9,7 @@ module.exports = function (eleventyConfig) {
       output: 'dist',
       includes: '_includes',
     },
-    templateFormats: ['md', 'njk'],
+    templateFormats: ['njk', 'md'],
     markdownTemplateEngine: 'njk',
     passthroughFileCopy: true,
   };

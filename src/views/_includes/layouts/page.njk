@@ -1,0 +1,15 @@
+{% extends 'layouts/base.njk' %}
+
+
+{% block content %}
+<div class="page-hero" style="background-image: url('{{ backgroundImage }}')">
+  <div class="page-hero-title-wrapper">
+    <h1>{{ title }}</h1>
+  </div>
+</div>
+
+<div class="page-content">
+  {% block pageContent %}
+  {% endblock %}
+<div>
+{% endblock %}
