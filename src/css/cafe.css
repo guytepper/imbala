@@ -10,8 +10,8 @@
 
 .cafe-header-hours-wrapper {
   padding: 20px;
-  background: #FFF7D3;  
-  box-shadow: inset 0 0 0 1px #DCDCDC, inset 0 0 0 4px #fff, inset 0 0 0 5px #DCDCDC;
+  background: #fff7d3;
+  box-shadow: inset 0 0 0 1px #dcdcdc, inset 0 0 0 4px #fff, inset 0 0 0 5px #dcdcdc;
 }
 
 .cafe-header-hours-title {
@@ -25,13 +25,13 @@
 }
 
 .cafe-header-hours-entries {
-  font-weight: 100;  
+  font-weight: 100;
 }
 
 .cafe-header-hours-entry {
   display: flex;
   flex-direction: column;
-  margin-bottom: 8px; 
+  margin-bottom: 8px;
 }
 
 .cafe-header-hours-day {
@@ -39,28 +39,37 @@
   font-weight: 400;
 }
 
-.cafe-menu-title {
+.cafe-menu-section {
+  display: grid;
+  gap: 20px;
+}
+
+.cafe-menu-section-title {
   font-family: var(--main-font);
   font-size: 33px;
   color: #454545;
   letter-spacing: 1px;
   text-transform: uppercase;
-  box-shadow: 0px 1px 0px 0px #D3D3D3, 0px 5px 0px 0px #fff, 0px 6px 0px 0px #D3D3D3
+  box-shadow: 0px 1px 0px 0px #d3d3d3, 0px 5px 0px 0px #fff, 0px 6px 0px 0px #d3d3d3;
 }
 
 .cafe-menu-item-title {
+  margin: 0;
+  margin-bottom: 6px;
   font-size: 24px;
   font-weight: 300;
 }
 
 .cafe-menu-item-desc {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
 }
 
-.cafe-menu-item-desc-text, .cafe-menu-item-desc-price {  
+.cafe-menu-item-desc-text,
+.cafe-menu-item-desc-price {
   margin: 0;
-  font-size: 20px;
+  margin-bottom: 5px;
+  font-size: 16px;
   font-weight: 100;
 }
 
@@ -69,22 +78,32 @@
     flex-direction: row;
   }
 
-.cafe-header-intro,
-.cafe-header-hours {
-  width: 50%;
-}
+  .cafe-header-intro,
+  .cafe-header-hours {
+    width: 50%;
+  }
 
-.cafe-header-intro {
-  margin-right: 40px;
-}
+  .cafe-menu-section {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 7vw;
+  }
 
-.cafe-header-hours-entry {
-  flex-direction: row;
-  justify-content: space-between;
-  font-weight: 100;
-}
+  .cafe-header-intro {
+    margin-right: 40px;
+  }
 
-.cafe-menu-item-desc {
-}
-}
+  .cafe-header-hours-entry {
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 100;
+  }
 
+  .cafe-menu-item-desc {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .cafe-menu-item-desc-text {
+    margin-right: 10px;
+  }
+}
