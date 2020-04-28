@@ -1,15 +1,11 @@
----
-layout: layouts/base.njk
----
+{% extends 'layouts/base.njk' %}
 
+{% block content %}
 <div class="homepage">
   <main class="homepage-content">
     <div class="homepage-hero">
       <div class="homepage-hero-text">
-        <p>
-          Imbala is an independent, member-owned political cooperative and vegan café in Jerusalem.
-        </p>
-        <p>Welcoming guests from all corners of this divided city and world.</p>
+        {% block heroText %}{% endblock %}
       </div>
 
       <div class="homepage-actions-buttons">
@@ -21,3 +17,4 @@ layout: layouts/base.njk
     </div>
   </main>
 </div>
+{% endblock %}

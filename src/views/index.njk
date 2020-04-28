@@ -1,8 +1,9 @@
----
-layout: layouts/homepage.njk
----
+{% extends 'layouts/homepage.njk' %}
 
-# Hi!
+{% block heroText %}
+  <p>Imbala is an independent, member-owned political cooperative and vegan café in Jerusalem.</p>
+  <p>Welcoming guests from all corners of this divided city and world.</p>
+{% endblock %}
 
 {% block address %}
 <span class="homepage-content-address-line">Yanai 3, Jerusalem</span>
