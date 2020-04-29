@@ -75,9 +75,9 @@
       },
       {
         "title": "Cookie",
-        "description": "reach nirvana in 2 bites.<br/> <i>~ 3 cookies for 10 ~</i>",
+        "description": "reach nirvana in 2 bites.",
         "price": {
-          "regular": 4
+          "regular": "4nis / 3 cookies for 10"
         }
       }
     ]
@@ -107,7 +107,6 @@
       },
       {
         "title": "Espresso",
-        "description": "double for 9",
         "price": {
           "regular": "single 8nis / double 9"
         }
