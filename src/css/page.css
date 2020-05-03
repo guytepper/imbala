@@ -4,6 +4,7 @@
   align-items: flex-end;
   height: 70vh;
   background-position: center;
+  background-size: cover;
   background-color: #000;
 }
 
