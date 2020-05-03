@@ -115,6 +115,10 @@
     background-color: #fff4e9;
   }
 
+  .site-nav-contents {
+    max-height: 100vh;
+  }
+
   .nav-logo {
     display: block;
     width: 220px;
