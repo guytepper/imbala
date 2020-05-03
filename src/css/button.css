@@ -1,15 +1,16 @@
 .imbala-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 280px;
   height: 65px;
   margin: 10px;
-  appearance: none;
   background: #e67e22;
   font-family: var(--sub-font);
-  color: #fff;
   font-size: 17px;
   font-weight: 600;
-  outline: none;
-  border: none;
+  color: #fff;
+  text-decoration: none;
   border-radius: 7px;
   cursor: pointer;
   transition: all 0.25s;

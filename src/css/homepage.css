@@ -8,12 +8,6 @@
 
 .homepage-content {
   padding-top: 50px;
-  text-align: center;
-  font-size: 30px;
-  line-height: 40px;
-  letter-spacing: -0.96px;
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
-
   background-image: linear-gradient(
       to top,
       rgba(0, 0, 0, 0) 0%,
@@ -24,6 +18,14 @@
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.homepage-hero-text {
+  text-align: center;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: -0.96px;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
 
 .homepage-actions-buttons {
