@@ -47,7 +47,7 @@ body {
   .site-wrapper {
     display: grid;
     height: 100vh;
-    grid-template-columns: [site-nav] 300px [site-content] auto;
+    grid-template-columns: [site-nav] 260px [site-content] auto;
     grid-template-rows: [site-nav site-content] 1fr;
   }
 
@@ -63,5 +63,11 @@ body {
     min-height: 95vh;
     padding: 12.5px;
     background: #d1a88724;
+  }
+
+  @media (min-width: 1440px) {
+    .site-wrapper {
+      grid-template-columns: [site-nav] 290px [site-content] auto;
+    }
   }
 }
