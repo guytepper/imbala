@@ -1,0 +1,10 @@
+.about-us-header {
+  font-size: clamp(24px, 5vw, 38px);
+  line-height: clamp(30px, 6vw, 55px);
+  text-align: center;
+}
+
+.about-us-content {
+  font-size: clamp(18px, 1.7vw, 28px);
+  line-height: clamp(25px, 5vw, 40px);
+}
