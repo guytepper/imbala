@@ -2,10 +2,12 @@
   "name": "imbala",
   "version": "1.0.0",
   "scripts": {
-    "start": "npx eleventy --serve",
+    "start": "gulp build & eleventy --serve",
     "clean": "rm -rf dist"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.10.0"
+    "@11ty/eleventy": "^0.10.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1"
   }
 }
