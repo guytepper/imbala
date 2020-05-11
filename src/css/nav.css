@@ -123,6 +123,12 @@
     display: block;
     width: 220px;
     margin-bottom: 40px;
+    border-radius: 50%;
+    transition: box-shadow 0.3s;
+  }
+
+  .nav-logo:hover {
+    box-shadow: 0 0 9px 0 #3a3a3ac2;
   }
 
   .site-nav-menu {
