@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "gulp build & eleventy --serve",
+    "build": "gulp build & eleventy",
     "clean": "rm -rf dist"
   },
   "devDependencies": {
