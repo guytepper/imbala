@@ -2,7 +2,7 @@
   "name": "imbala",
   "version": "1.0.0",
   "scripts": {
-    "start": "gulp build & eleventy --serve",
+    "start": "gulp build & gulp watch & eleventy --serve",
     "build": "gulp build & eleventy",
     "clean": "rm -rf dist"
   },
