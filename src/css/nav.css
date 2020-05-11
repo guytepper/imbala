@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
+  padding: 20px 10px;
 }
 
 .site-nav-menu {
@@ -125,11 +125,12 @@
     width: 220px;
     margin-bottom: 40px;
     border-radius: 50%;
-    transition: box-shadow 0.3s;
+    transition: all 0.25s;
   }
 
   .nav-logo:hover {
-    box-shadow: 0 0 9px 0 #3a3a3ac2;
+    box-shadow: 0 0 9px 0 #e67f25ad;
+    transform: scale(1.01);
   }
 
   .site-nav-menu {
@@ -145,10 +146,12 @@
 
   .site-nav-menu__link {
     font-size: 21px;
+    transition: all 0.25s;
   }
 
   .site-nav-menu__link:hover {
     color: #000000;
     background: none;
+    font-size: 23px;
   }
 }
