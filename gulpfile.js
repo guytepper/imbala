@@ -6,7 +6,7 @@ gulp.task('css', function () {
 });
 
 gulp.task('watch', function () {
-  gulp.watch('./src/css/*.css');
+  gulp.watch('./src/css/*.css', gulp.parallel('css'));
 });
 
 gulp.task('build', gulp.parallel('css'));
