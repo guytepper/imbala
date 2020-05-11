@@ -8,19 +8,19 @@
   font-family: 'Simpler';
   font-style: normal;
   font-weight: 400;
-  src: local('Simpler Regular'), url('/css/Simpler-Regular.woff') format('woff');
+  src: local('Simpler Regular'), url('/css/fonts/Simpler-Regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Simpler';
   font-weight: 100;
-  src: local('Simpler Light'), url('/css/Simpler-Light.woff') format('woff');
+  src: local('Simpler Light'), url('/css/fonts/Simpler-Light.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Simpler';
   font-weight: 700;
-  src: local('Simpler Bold'), url('/css/Simpler-Bold.woff') format('woff');
+  src: local('Simpler Bold'), url('/css/fonts/Simpler-Bold.woff') format('woff');
 }
 
 html {
