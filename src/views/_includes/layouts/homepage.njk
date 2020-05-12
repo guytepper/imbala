@@ -1,6 +1,4 @@
-{% extends 'layouts/base.njk' %}
-
-{% block content %}
+{% extends 'layouts/base.njk' %} {% block content %}
 <div class="homepage">
   <main class="homepage-content">
     <div class="homepage-hero">
@@ -11,8 +9,10 @@
       <div class="homepage-actions-buttons">
         <a class="imbala-button" href="#">Learn About Us</a>
         <a class="imbala-button" href="/cafe/">View Our Menu</a>
-        <a class="imbala-button" href="#">Check Our Events</a>
-        <a class="imbala-button" href="#">Become A Member</a>
+      </div>
+
+      <div class="homepage-address">
+        {% block address %}{% endblock %}
       </div>
     </div>
   </main>
