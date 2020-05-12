@@ -6,9 +6,9 @@
   padding: 20px 10px;
 }
 
-.site-nav-menu {
-  height: 100%;
+.site-nav-menu-wrapper {
   width: var(--nav-width);
+  height: 100%;
   padding: 20px 0 15px;
   display: flex;
   flex-direction: column;
@@ -22,6 +22,11 @@
   font-family: Simpler, -apple-system, system-ui, sans-serif;
   transform: translateX(calc(-20px - var(--nav-width)));
   transition: all 0.3s ease;
+}
+
+.site-nav-menu {
+  width: 100%;
+  text-align: center;
 }
 
 .no-js .menu-btn {
@@ -61,7 +66,7 @@
   color: #47a3da;
 }
 
-.menu-active .site-nav-menu {
+.menu-active .site-nav-menu-wrapper {
   transform: translateX(0);
 }
 
@@ -171,8 +176,7 @@
     margin-bottom: 40px;
   }
 
-  .site-nav-menu {
-    width: 100%;
+  .site-nav-menu-wrapper {
     position: relative;
     transform: none;
     transition: none;

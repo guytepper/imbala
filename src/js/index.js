@@ -1,6 +1,6 @@
 const menuBtn = document.querySelector('.menu-btn');
 const siteNav = document.querySelector('.site-nav');
-const siteNavMenu = document.querySelector('.site-nav-menu');
+const siteNavMenu = document.querySelector('.site-nav-menu-wrapper');
 const navClosebtn = document.querySelector('.nav-close-button');
 const fadedBackground = document.querySelector('.faded-background');
 
