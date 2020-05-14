@@ -73,3 +73,12 @@ body {
     }
   }
 }
+
+/** Generic global classes **/
+.bold {
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
+}
