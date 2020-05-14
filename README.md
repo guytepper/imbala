@@ -13,11 +13,3 @@ To build the site you'll need:
 
 After you cloned to repo to your machine, you'll need to run `yarn install` in the project working directory.  
 Then use `yarn start` to start the development server.
-
-### Contribution
-
-1. Fork the repo on GitHub.
-2. Clone the project to your own machine.
-3. Commit changes to your own branch.
-4. Push your work back up to your fork.
-5. Submit a Pull request 🤖
