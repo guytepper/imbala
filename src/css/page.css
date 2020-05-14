@@ -19,3 +19,12 @@
   font-family: var(--sub-font);
   color: #000;
 }
+
+.page-content a {
+  color: #59a7f6;
+  text-decoration: none;
+}
+
+.page-content a:hover {
+  text-decoration: underline;
+}

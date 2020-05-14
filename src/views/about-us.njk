@@ -4,11 +4,14 @@ backgroundImage: '/images/about-us-thumb.jpg'
 ---
 
 {% extends 'layouts/page.njk' %} {% block pageContent %}
-<h2 class="about-us-header">
+{# <h2 class="about-us-header">
   Imbala was established in 2017 by a group of Jerusalem activists, artists, and human beings from
   all backgrounds and walks of life.
-</h2>
+</h2> #}
 <div class="about-us-content">
+<p>  Imbala was established in 2017 by a group of Jerusalem activists, artists, and human beings from
+  all backgrounds and walks of life.
+</p>
   <p>
     With the founding of Imbala, we have created a communal space for co-resistance in Jerusalem — a
     place for Jerusalemites who feel unwelcome in other parts of the city.
@@ -19,7 +22,7 @@ backgroundImage: '/images/about-us-thumb.jpg'
     to connect struggles, strategize, and create actions that challenge the status quo in Jerusalem.
   </p>
 
-  <p>In practice, Imbala is a café / library / event space which serves multiple functions:</p>
+  <p class="underline">In practice, Imbala is a café / library / event space which serves multiple functions:</p>
 
   <ol>
     <li>
@@ -32,5 +35,6 @@ backgroundImage: '/images/about-us-thumb.jpg'
       meetings, organizing and private events.
     </li>
   </ol>
+  <p class="bold">Want to learn more? <a href="/manifesto">Read our Manifesto!</a></p>
 </div>
 {% endblock %}
