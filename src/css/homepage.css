@@ -7,6 +7,7 @@
 }
 
 .homepage-content {
+  min-height: 100vh;
   padding-top: 50px;
   background-image: linear-gradient(
       to top,
@@ -18,6 +19,7 @@
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
+  color: #fff;
 }
 
 .homepage-hero-text {
@@ -41,16 +43,17 @@
   flex: 1 1 180px;
 }
 
-.homepage-hero-address {
-  font-size: 20px;
+.homepage-address {
+  margin-bottom: 30px;
+  font-size: 22px;
   letter-spacing: -0.8px;
-  font-family: var(--sub-font);
   color: #ecf0f1;
+  text-align: center;
 }
 
-.homepage-hero-address-line {
+.homepage-address-line {
   display: block;
-  margin: -11px 0;
+  margin: 7.5px 0;
 }
 
 @media (min-width: 572px) {
@@ -76,6 +79,7 @@
   }
 
   .homepage-actions-buttons {
+    width: 560px;
     justify-content: space-between;
   }
 

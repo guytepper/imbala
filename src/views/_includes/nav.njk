@@ -1,12 +1,27 @@
 <button class="menu-btn" aria-label="Open navigation menu"></button>
-<div class="site-nav site-nav-content">
+<div class="site-nav-content">
   <button class="nav-close-button aria-label="Close navigation menu"></button>
-  <nav class="site-nav-menu">
-    <a href="/"><img src="/images/logo.png" class="nav-logo" /></a>
-    <a href="/about-us" class="site-nav-menu__link">About Us</a>
-    <a href="/cafe" class="site-nav-menu__link">Cafè</a>
-    <a href="#" class="site-nav-menu__link">Events</a>
-    <a href="#" class="site-nav-menu__link">Join Us</a>
-  </nav>
+  <div class="site-nav-menu-wrapper">
+    <nav class="site-nav-menu">
+      <a href="/"><img src="/images/logo.png" class="nav-logo" /></a>
+      <a href="#" class="site-nav-menu__link">About Us</a>
+      <a href="/cafe" class="site-nav-menu__link">Cafè</a>
+      <a href="#" class="site-nav-menu__link">Events</a>
+      <a href="#" class="site-nav-menu__link">Join Us</a>
+    </nav>
+
+    <div class="nav-footer">
+      <h4 class="nav-footer-address">Yanai 3, Jerusalem</h4>
+    <div class="nav-footer-social">
+      <a href="https://www.facebook.com/imbalacoop" class="nav-footer__link nav-footer__link--facebook" target="_blank">
+        {% include '../../images/facebook-icon.svg' %}
+      </a>
+      <a href="https://www.instagram.com/imbala123/" class="nav-footer__link nav-footer__link--instagram" target="_blank">
+        {% include '../../images/instagram-icon.svg' %}
+      </a>
+    </div>
+    </div> 
+  </div>
+
   <aside class="faded-background" aria-hidden="true"></aside>
 </div>
