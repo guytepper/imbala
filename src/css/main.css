@@ -35,6 +35,13 @@ html {
   box-sizing: inherit;
 }
 
+input[type='text'],
+input[type='email'],
+input[type='password'],
+textarea {
+  -webkit-appearance: none;
+}
+
 body {
   min-height: 100vh;
   margin: 0;
