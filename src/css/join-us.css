@@ -1,0 +1,31 @@
+.join-us-form-label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.join-us-form-input {
+  height: 42px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.join-us-form-input:focus {
+  border-color: #66afe9;
+  outline: 0;
+  box-shadow: 0 0 3px #66afe999;
+}
+
+.join-us-form .imbala-button {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .join-us-form {
+    max-width: 500px;
+  }
+}

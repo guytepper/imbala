@@ -41,23 +41,30 @@ backgroundImage: '/images/cafe-thumb.jpg'
   </p>
   <h3>How do I become a member?</h3>
   <p>
-    Send an email to imbala.membership@gmail.com with some details about yourself and why you want
-    to join us!
+    Fill the following form and we'll get back to you :)
   </p>
 
-  <form name="contact" method="POST" data-netlify="true">
+  <form class="join-us-form" name="join-us" method="POST" data-netlify="true">
     <p>
-      <label>Your Name: <input type="text" name="name" autocomplete="name" required /></label>
+      <label class="join-us-form-label"
+        >Your Name:
+        <input class="join-us-form-input" type="text" name="name" autocomplete="name" required
+      /></label>
     </p>
     <p>
-      <label>Your Email: <input type="email" name="email" autocomplete="email" required /></label>
+      <label class="join-us-form-label"
+        >Your Email:
+        <input class="join-us-form-input" type="email" name="email" autocomplete="email" required
+      /></label>
     </p>
 
     <p>
-      <label>Message (optional): <textarea name="message"></textarea></label>
+      <label class="join-us-form-label"
+        >Message (optional): <textarea class="join-us-form-input" name="message"></textarea>
+      </label>
     </p>
     <p>
-      <button type="submit">Send</button>
+      <button class="imbala-button" type="submit">Send</button>
     </p>
   </form>
 </div>
