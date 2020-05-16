@@ -24,8 +24,8 @@
 
 .homepage-hero-text {
   text-align: center;
-  font-size: 28px;
-  line-height: 40px;
+  font-size: 31px;
+  line-height: 45px;
   letter-spacing: -0.96px;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
@@ -44,17 +44,10 @@
   flex: 1 1 180px;
 }
 
-.homepage-address {
-  margin-bottom: 30px;
-  font-size: 22px;
-  letter-spacing: -0.8px;
-  color: #ecf0f1;
-  text-align: center;
-}
-
-.homepage-address-line {
-  display: block;
-  margin: 7.5px 0;
+.homepage-slogan {
+  font-style: italic;
+  font-size: 25px;
+  line-height: 35px;
 }
 
 @media (min-width: 572px) {
