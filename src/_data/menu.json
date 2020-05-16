@@ -4,7 +4,7 @@
     "items": [
       {
         "title": "Granola Bowl",
-        "description": "homemade granola with fresh orange/cranberries & milk of your choice. <br/>Served with date honey on the side",
+        "description": "homemade granola with fresh orange/cranberries & milk of your choice. <br/>served with date honey on the side",
         "price": {
           "regular": 15,
           "member": 12
@@ -28,7 +28,7 @@
       },
       {
         "title": "Hot Dog",
-        "description": "carrot hot dog or Smoked tofu (choose one).<br/> Served with ketchup, vegan mayo, mustard, pickles, pickled onions and baked cabbage",
+        "description": "carrot hot dog or Smoked tofu (choose one).<br/> served with ketchup, vegan mayo, mustard, pickles, pickled onions and baked cabbage",
         "price": {
           "regular": 25,
           "member": 20
@@ -60,14 +60,14 @@
       },
       {
         "title": "Pickles and olive bowl",
-        "description": "salty. yummy.",
+        "description": "salty and yummy",
         "price": {
           "regular": 5
         }
       },
       {
         "title": "Muffin",
-        "description": "don't leave without trying them.",
+        "description": "don't leave without trying them",
         "price": {
           "regular": 10,
           "member": 8
@@ -137,7 +137,7 @@
       },
       {
         "title": "Iced Tea",
-        "description": "add 8nis for a shot of gin whisky!",
+        "description": "add 8nis for a shot of gin or whisky!",
         "price": {
           "regular": "8"
         }
