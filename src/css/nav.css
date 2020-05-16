@@ -37,12 +37,12 @@
   width: 150px;
   margin-bottom: 20px;
   border-radius: 50%;
-  transition: all 0.25s;
+  transition: all 0.3s;
 }
 
 .nav-logo:hover {
-  box-shadow: 0 0 9px 0 #e67f25ad;
-  transform: scale(1.01);
+  box-shadow: 0 0 6px 0 #e67f25c7;
+  transform: scale(1.05);
 }
 
 .site-nav-menu__link {
