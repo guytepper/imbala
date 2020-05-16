@@ -4,9 +4,10 @@
   align-items: center;
   width: 280px;
   height: 65px;
+  padding-bottom: 6px; /* to center petite caps text */
   background: #e67e22;
   font-family: var(--sub-font);
-  font-size: 17px;
+  font-size: 25px;
   font-weight: 600;
   color: #fff;
   text-decoration: none;
@@ -14,6 +15,7 @@
   border-radius: 7px;
   cursor: pointer;
   transition: all 0.25s;
+  font-variant: all-petite-caps;
 }
 
 .imbala-button:hover {
