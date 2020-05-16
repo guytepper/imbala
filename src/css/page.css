@@ -22,9 +22,22 @@
 
 .page-content a {
   color: #59a7f6;
+  font-weight: bold;
   text-decoration: none;
 }
 
 .page-content a:hover {
   text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .page-content {
+    padding: 30px 125px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-content {
+    padding: 35px 65px;
+  }
 }

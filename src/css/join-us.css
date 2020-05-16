@@ -1,0 +1,46 @@
+.join-us-message-box p:first-of-type {
+  margin-top: 0;
+}
+
+.join-us-message-box p:last-of-type {
+  margin-bottom: 0;
+}
+
+.join-us-form-label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.join-us-form-input {
+  height: 42px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.join-us-form-input:focus {
+  border-color: #66afe9;
+  outline: 0;
+  box-shadow: 0 0 3px #66afe999;
+}
+
+.join-us-form .imbala-button {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .join-us-message-box {
+    float: right;
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
+  .join-us-form {
+    max-width: 500px;
+  }
+}

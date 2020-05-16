@@ -4,13 +4,13 @@
   align-items: center;
   width: 280px;
   height: 65px;
-  margin: 10px;
   background: #e67e22;
   font-family: var(--sub-font);
   font-size: 17px;
   font-weight: 600;
   color: #fff;
   text-decoration: none;
+  border: none;
   border-radius: 7px;
   cursor: pointer;
   transition: all 0.25s;
