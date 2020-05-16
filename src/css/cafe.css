@@ -88,8 +88,8 @@
   }
 
   .cafe-header-hours-entry {
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 3.5fr 1fr;
     font-weight: 100;
   }
 
