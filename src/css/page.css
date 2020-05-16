@@ -28,3 +28,9 @@
 .page-content a:hover {
   text-decoration: underline;
 }
+
+@media (min-width: 768px) {
+  .page-content {
+    padding: 35px 65px;
+  }
+}
