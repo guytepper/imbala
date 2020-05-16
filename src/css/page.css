@@ -31,6 +31,12 @@
 
 @media (min-width: 768px) {
   .page-content {
+    padding: 30px 125px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-content {
     padding: 35px 65px;
   }
 }
