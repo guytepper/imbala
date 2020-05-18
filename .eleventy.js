@@ -5,10 +5,10 @@ module.exports = function (eleventyConfig) {
 
   return {
     dir: {
-      input: 'src/views',
+      input: 'src/site',
       output: 'dist',
       includes: '_includes',
-      data: '../_data',
+      data: '_data',
     },
     templateFormats: ['njk', 'md'],
     markdownTemplateEngine: 'njk',

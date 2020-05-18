@@ -1,0 +1,59 @@
+---
+title: 'Cafè'
+backgroundImage: '/images/cafe-thumb.jpg'
+---
+
+{% extends 'layouts/page.njk' %} {% block pageContent %}
+<div class="cafe-header">
+  <div class="cafe-header-intro">
+    <p>
+    Our cafè serves high quality, sustainable, vegan, and reasonably priced food made by Imbala’s members.
+    </p>
+    <p>
+    Check our opening hours for details on when you can come enjoy a coffee and one of our homemade vegan bakes.
+    </p>
+  </div>
+  <div class="cafe-header-hours">
+    <div class="message-box">
+      <h2 class="cafe-header-hours-title">Opening Hours</h2>
+      <div class="cafe-header-hours-entries">
+        <div class="cafe-header-hours-entry">
+          <span class="cafe-header-hours-day">Sunday, Monday, Tuesday</span>
+          <span>CLOSED</span>
+        </div>
+        <div class="cafe-header-hours-entry">
+          <span class="cafe-header-hours-day">Wedensday, Thursday, Saturday</span>
+          <span>12:00 - 23:00</span>
+        </div>
+        <div class="cafe-header-hours-entry">
+          <span class="cafe-header-hours-day">Friday</span>
+          <span>11:00 - 18:00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cafe-menu">
+  <div>
+    {%- for section in menu -%}
+    <h2 class="cafe-menu-section-title">{{ section.title }}</h2>
+
+    <div class="cafe-menu-section">
+      {%- for item in section.items -%}
+      <div class="cafe-menu-item">
+        <h3 class="cafe-menu-item-title">{{ item.title }}</h3>
+        <div class="cafe-menu-item-desc">
+          <h5 class="cafe-menu-item-desc-text">{{ item.description | safe }}</h5>
+          <span class="cafe-menu-item-desc-price"
+            >{{ item.price.regular }}{% if item.price.member %}/{{ item.price.member }}{% endif
+            %}nis</span
+          >
+        </div>
+      </div>
+      {%- endfor -%}
+    </div>
+    {%- endfor -%}
+  </div>
+  {% endblock %}
+</div>
