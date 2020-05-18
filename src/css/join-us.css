@@ -40,6 +40,10 @@
     margin-left: 30px;
   }
 
+  [dir='rtl'] .join-us-message-box {
+    float: left;
+  }
+
   .join-us-form {
     max-width: 500px;
   }
