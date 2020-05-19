@@ -124,6 +124,7 @@
 }
 
 .nav-footer-address {
+  margin-bottom: 15px;
   font-weight: 300;
   font-style: normal;
 }
@@ -133,6 +134,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.rtl .nav-footer-social {
+  flex-direction: row-reverse;
 }
 
 .nav-footer__link path {
@@ -147,8 +152,12 @@
   fill: #833ab4;
 }
 
-.nav-footer__link:not(:last-of-type) {
+.ltr .nav-footer__link:not(:last-of-type) {
   margin-right: 18px;
+}
+
+.rtl .nav-footer__link:not(:first-of-type) {
+  margin-left: 18px;
 }
 
 @media (min-width: 1024px) {
