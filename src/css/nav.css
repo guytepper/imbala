@@ -137,6 +137,12 @@
   opacity: 1;
 }
 
+.nav-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .nav-footer-address {
   margin-bottom: 15px;
   font-weight: 300;
@@ -172,6 +178,20 @@
 
 .rtl .nav-footer__link:not(:first-of-type) {
   margin-left: 18px;
+}
+
+.nav-footer-lang {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.nav-footer-lang a {
+  font-weight: 100;
+  color: #000;
+}
+
+.nav-footer-lang a:hover {
+  text-decoration: underline;
 }
 
 @media (min-width: 1024px) {

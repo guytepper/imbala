@@ -58,6 +58,10 @@ body {
   font-family: var(--main-font);
 }
 
+a {
+  text-decoration: none;
+}
+
 @media (min-width: 1024px) {
   body {
     background-position: center;
