@@ -10,14 +10,14 @@
       <a href="/join-us" class="site-nav-menu__link">Join Us</a>
       {% else %}
       <a href="/{{ locale }}"><img src="/images/logo.png" class="nav-logo" /></a>
-      <a href="/{{ locale }}/about-us" class="site-nav-menu__link">About Us</a>
-      <a href="/{{ locale }}/cafe" class="site-nav-menu__link">Cafè</a>
-      <a href="/{{ locale }}/join-us" class="site-nav-menu__link">Join Us</a>
+      <a href="/{{ locale }}/about-us" class="site-nav-menu__link">{{ nav[locale].about }}</a>
+      <a href="/{{ locale }}/cafe" class="site-nav-menu__link">{{ nav[locale].cafe }}</a>
+      <a href="/{{ locale }}/join-us" class="site-nav-menu__link">{{ nav[locale].join }}</a>
       {% endif %}
     </nav>
 
     <div class="nav-footer">
-      <address class="nav-footer-address">Yanai 3, Jerusalem</address>
+      <address class="nav-footer-address">{{ nav[locale].address }}</address>
     <div class="nav-footer-social">
       <a href="https://www.facebook.com/imbalacoop" class="nav-footer__link nav-footer__link--facebook" target="_blank">
         {% include '../../images/facebook-icon.svg' %}
