@@ -1,5 +1,5 @@
 ---
-title: 'Cafè'
+title: 'בית קפה'
 backgroundImage: '/images/cafe-thumb.jpg'
 ---
 
@@ -15,18 +15,18 @@ backgroundImage: '/images/cafe-thumb.jpg'
   </div>
   <div class="cafe-header-hours">
     <div class="message-box">
-      <h2 class="cafe-header-hours-title">Opening Hours</h2>
+      <h2 class="cafe-header-hours-title">שעות פתיחה</h2>
       <div class="cafe-header-hours-entries">
         <div class="cafe-header-hours-entry">
-          <span class="cafe-header-hours-day">Sunday, Monday, Tuesday</span>
-          <span>CLOSED</span>
+          <span class="cafe-header-hours-day">ראשון, שני ושלישי</span>
+          <span>סגור</span>
         </div>
         <div class="cafe-header-hours-entry">
-          <span class="cafe-header-hours-day">Wedensday, Thursday, Saturday</span>
+          <span class="cafe-header-hours-day">רביעי חמישי ושבת</span>
           <span>12:00 - 23:00</span>
         </div>
         <div class="cafe-header-hours-entry">
-          <span class="cafe-header-hours-day">Friday</span>
+          <span class="cafe-header-hours-day">שישי</span>
           <span>11:00 - 18:00</span>
         </div>
       </div>
@@ -47,7 +47,7 @@ backgroundImage: '/images/cafe-thumb.jpg'
           <h5 class="cafe-menu-item-desc-text">{{ item.description | safe }}</h5>
           <span class="cafe-menu-item-desc-price"
             >{{ item.price.regular }}{% if item.price.member %}/{{ item.price.member }}{% endif
-            %}nis</span
+            %}₪</span
           >
         </div>
       </div>
