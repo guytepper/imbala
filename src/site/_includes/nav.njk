@@ -3,10 +3,17 @@
   <button class="nav-close-button" aria-label="Close navigation menu"></button>
   <div class="site-nav-menu-wrapper">
     <nav class="site-nav-menu">
+    {% if locale == 'en' %}
       <a href="/"><img src="/images/logo.png" class="nav-logo" /></a>
       <a href="/about-us" class="site-nav-menu__link">About Us</a>
       <a href="/cafe" class="site-nav-menu__link">Cafè</a>
       <a href="/join-us" class="site-nav-menu__link">Join Us</a>
+      {% else %}
+      <a href="/{{ locale }}"><img src="/images/logo.png" class="nav-logo" /></a>
+      <a href="/{{ locale }}/about-us" class="site-nav-menu__link">About Us</a>
+      <a href="/{{ locale }}/cafe" class="site-nav-menu__link">Cafè</a>
+      <a href="/{{ locale }}/join-us" class="site-nav-menu__link">Join Us</a>
+      {% endif %}
     </nav>
 
     <div class="nav-footer">
