@@ -1,5 +1,5 @@
 .landing {
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr [content] 3fr 1fr;
   grid-template-rows: [content] 5fr 0.5fr;
