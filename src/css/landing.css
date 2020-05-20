@@ -6,6 +6,7 @@
   background-image: url('/images/landing/frinds01.jpg');
   background-position: center;
   background-size: cover;
+  padding-top: 15px;
 }
 
 .landing-content {
