@@ -3,11 +3,12 @@
   <main class="homepage-content">
     <div class="homepage-hero">
       <div class="homepage-hero-text">
-        {% block welcomeText %}{% endblock %}
-        </div>
+        {% block welcomeText %}{% endblock %} 
+      </div>
 
         <div class="homepage-actions-buttons">
-          {% block homeButtons %}{% endblock %}
+          <a class="imbala-button" href="/about-us">{{ buttons[locale].aboutUs }}</a>
+          <a class="imbala-button" href="/cafe/">{{ buttons[locale].menu }}</a>
         </div>
               
         <div class="homepage-hero-text homepage-slogan">

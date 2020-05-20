@@ -4,6 +4,10 @@
   --sub-font: Simpler, -apple-system, system-ui, sans-serif;
 }
 
+[dir='rtl'] {
+  --main-font: 'Suez One', 'Times New Roman', serif;
+}
+
 @font-face {
   font-family: 'Simpler';
   font-style: normal;
@@ -52,6 +56,10 @@ body {
   min-height: 100vh;
   margin: 0;
   font-family: var(--main-font);
+}
+
+a {
+  text-decoration: none;
 }
 
 @media (min-width: 1024px) {
