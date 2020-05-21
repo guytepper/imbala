@@ -1,0 +1,58 @@
+---
+title: 'בית קפה'
+backgroundImage: '/images/cafe-thumb.jpg'
+---
+
+{% extends 'layouts/page.njk' %} {% block pageContent %}
+<div class="cafe-header">
+  <div class="cafe-header-intro">
+    <p>
+בית הקפה שלנו מגיש אוכל בריא, טעים ומתומחר בהגינות שמבושל ומוגש על ידי חברי וחברות אםבאלה.
+    </p>
+    <p>
+נשמח לארח אתכן לקפה, סעודה עם חברות או עבודה עם הלפטופ בשעות הפעילות שלנו.    </p>
+  </div>
+  <div class="cafe-header-hours">
+    <div class="message-box">
+      <h2 class="cafe-header-hours-title">שעות פתיחה</h2>
+      <div class="cafe-header-hours-entries">
+        <div class="cafe-header-hours-entry">
+          <span class="cafe-header-hours-day">ראשון, שני ושלישי</span>
+          <span>סגור</span>
+        </div>
+        <div class="cafe-header-hours-entry">
+          <span class="cafe-header-hours-day">רביעי חמישי ושבת</span>
+          <span>12:00 - 23:00</span>
+        </div>
+        <div class="cafe-header-hours-entry">
+          <span class="cafe-header-hours-day">שישי</span>
+          <span>11:00 - 18:00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cafe-menu">
+  <div>
+    {%- for section in menu -%}
+    <h2 class="cafe-menu-section-title">{{ section.title }}</h2>
+
+    <div class="cafe-menu-section">
+      {%- for item in section.items -%}
+      <div class="cafe-menu-item">
+        <h3 class="cafe-menu-item-title">{{ item.title }}</h3>
+        <div class="cafe-menu-item-desc">
+          <h5 class="cafe-menu-item-desc-text">{{ item.description | safe }}</h5>
+          <span class="cafe-menu-item-desc-price"
+            >{{ item.price.regular }}{% if item.price.member %}/{{ item.price.member }}{% endif
+            %}₪</span
+          >
+        </div>
+      </div>
+      {%- endfor -%}
+    </div>
+    {%- endfor -%}
+  </div>
+  {% endblock %}
+</div>
