@@ -3,7 +3,16 @@
   <button class="nav-close-button" aria-label="Close navigation menu"></button>
   <div class="site-nav-menu-wrapper">
     <nav class="site-nav-menu">
-      <a href="/{{ locale }}"><img src="/images/logo.png" class="nav-logo" alt="" /></a>
+      <a href="/{{ locale }}">
+        <picture>
+          <source
+            type="image/webp"
+            srcset="/images/logo@1x.webp 1x, /images/logo@2x.webp 2x, /images/logo@3x.webp 3x"
+          />
+          <source srcset="/images/logo@1x.png 1x, /images/logo@2x.png 2x, /images/logo@3x.png 3x" />
+          <img src="/images/logo@1x.png" alt="" class="nav-logo" />
+        </picture>
+      </a>
       <a href="/{{ locale }}/about-us" class="site-nav-menu__link">{{ nav[locale].about }}</a>
       <a href="/{{ locale }}/cafe" class="site-nav-menu__link">{{ nav[locale].cafe }}</a>
       <a href="/{{ locale }}/join-us" class="site-nav-menu__link">{{ nav[locale].join }}</a>
