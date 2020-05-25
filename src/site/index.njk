@@ -12,10 +12,17 @@
   </head>
   <body class="no-js landing">
     <div class="landing-content">
-        <img src="/images/logo.png" class="landing-logo" />
+        <picture>
+          <source
+            type="image/webp"
+            srcset="/images/logo@1x.webp 1x, /images/logo@2x.webp 2x, /images/logo@3x.webp 3x"
+          />
+          <source srcset="/images/logo@1x.png 1x, /images/logo@2x.png 2x, /images/logo@3x.png 3x" />
+          <img src="/images/logo@1x.png" alt="" class="landing-logo" />
+        </picture>        
         <div class="landing-intro">
           <p class="rtl bold">Hello, שלום & سلام!</p>
-          <p class="landing-intro">what language do you speak?</p>
+          <p class="landing-intro">what is your preferred language?</p>
         </div>
 
       <div>

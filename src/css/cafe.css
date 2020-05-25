@@ -33,6 +33,11 @@
   font-weight: 400;
 }
 
+.rtl .cafe-header-hours-time {
+  justify-self: flex-start;
+  direction: ltr;
+}
+
 .cafe-menu-section {
   display: grid;
   gap: 20px;
