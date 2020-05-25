@@ -12,27 +12,27 @@
   font-family: 'Simpler';
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
-  src: local('Simpler Regular'), url('/css/fonts/Simpler-Regular.woff') format('woff');
+  font-display: optional;
+  src: url('/css/fonts/Simpler-Regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Simpler';
   font-weight: 100;
-  font-display: swap;
-  src: local('Simpler Light'), url('/css/fonts/Simpler-Light.woff') format('woff');
+  font-display: optional;
+  src: url('/css/fonts/Simpler-Light.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Simpler';
   font-weight: 700;
-  font-display: swap;
-  src: local('Simpler Bold'), url('/css/fonts/Simpler-Bold.woff') format('woff');
+  font-display: optional;
+  src: url('/css/fonts/Simpler-Bold.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Headland One';
-  font-display: swap;
+  font-display: optional;
   src: local('Headland One'), url('/css/fonts/HeadlandOne-Regular.woff2') format('woff2');
 }
 
