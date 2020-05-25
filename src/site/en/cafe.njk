@@ -12,6 +12,7 @@ backgroundImage: '/images/cafe-thumb.jpg'
     <p>
     Check our opening hours for details on when you can come enjoy a coffee and one of our homemade vegan bakes.
     </p>
+    <p class="bold">Due to the COVID-19 Ministry of Health restrictions we are serving a temporary menu with limited options.</p>
   </div>
   <div class="cafe-header-hours">
     <div class="message-box">
@@ -40,7 +41,7 @@ backgroundImage: '/images/cafe-thumb.jpg'
 
 <div class="cafe-menu">
   <div>
-    {%- for section in menu -%}
+    {%- for section in temp_menu['en'] -%}
     <h2 class="cafe-menu-section-title">{{ section.title }}</h2>
 
     <div class="cafe-menu-section">

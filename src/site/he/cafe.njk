@@ -11,6 +11,7 @@ backgroundImage: '/images/cafe-thumb.jpg'
     </p>
     <p>
 נשמח לארח אתכן לקפה, סעודה עם חברות או עבודה עם הלפטופ בשעות הפעילות שלנו.    </p>
+<p class="bold">בשל הנחיות משרד הבריאות אנחנו מגישות תפריט זמני ומצומצם.</p>
   </div>
   <div class="cafe-header-hours">
     <div class="message-box">
@@ -39,7 +40,7 @@ backgroundImage: '/images/cafe-thumb.jpg'
 
 <div class="cafe-menu">
   <div>
-    {%- for section in menu -%}
+    {%- for section in temp_menu['he'] -%}
     <h2 class="cafe-menu-section-title">{{ section.title }}</h2>
 
     <div class="cafe-menu-section">

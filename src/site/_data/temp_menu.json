@@ -1,0 +1,204 @@
+{
+  "en": [
+    {
+      "title": "Food",
+      "items": [
+        {
+          "title": "Old City Hummus",
+          "description": "served with pitas, cucumber, tomato, onion and pickles",
+          "price": {
+            "regular": 25,
+            "member": 20
+          }
+        },
+        {
+          "title": "Muffin",
+          "description": "don't leave without trying them",
+          "price": {
+            "regular": 10,
+            "member": 8
+          }
+        },
+        {
+          "title": "Cookie",
+          "description": "reach nirvana in 2 bites.",
+          "price": {
+            "regular": "4nis / 3 cookies for 10"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Drinks",
+      "items": [
+        {
+          "title": "Orange Juice / Lemonade",
+          "description": "freshly squeezed",
+          "price": {
+            "regular": 8
+          }
+        },
+        {
+          "title": "Tea",
+          "price": {
+            "regular": "cup 5nis / pot 10"
+          }
+        },
+        {
+          "title": "Black Coffee",
+          "price": {
+            "regular": 5,
+            "member": 6
+          }
+        },
+        {
+          "title": "Espresso",
+          "price": {
+            "regular": "single 8nis / double 9"
+          }
+        },
+        {
+          "title": "Americano",
+          "price": {
+            "regular": "small 5nis / large 10"
+          }
+        },
+        {
+          "title": "Cappuccino",
+          "price": {
+            "regular": "small 10nis / large 13"
+          }
+        },
+        {
+          "title": "Hot Chocolate",
+          "price": {
+            "regular": "14"
+          }
+        },
+        {
+          "title": "Iced Coffee",
+          "price": {
+            "regular": "12"
+          }
+        },
+        {
+          "title": "Iced Tea",
+          "description": "add 8nis for a shot of gin or whisky!",
+          "price": {
+            "regular": "8"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Alcohol",
+      "items": [
+        { "title": "½ San Miguel (can)", "price": { "regular": 18, "member": 15 } },
+        { "title": "⅓ Taybeh (bottle)", "price": { "regular": 20, "member": 18 } },
+        { "title": "Savanna Cider", "price": { "regular": 24, "member": 20 } },
+        { "title": "Red / White Wine", "price": { "regular": 18, "member": 15 } }
+      ]
+    }
+  ],
+  "he": [
+    {
+      "title": "אוכל",
+      "items": [
+        {
+          "title": "חומוס מהעיר העתיקה",
+          "description": "מוגש עם פיתות, מלפפון, עגבניה וחמוצים",
+          "price": {
+            "regular": 25,
+            "member": 20
+          }
+        },
+        {
+          "title": "מאפין",
+          "description": "אל תצאו בלי לנסות אותו",
+          "price": {
+            "regular": 10,
+            "member": 8
+          }
+        },
+        {
+          "title": "עוגיה",
+          "description": "הגיעו לגאולה ב-2 ביסים",
+          "price": {
+            "regular": "₪4 / 3 עוגיות ב- 10"
+          }
+        }
+      ]
+    },
+    {
+      "title": "משקאות",
+      "items": [
+        {
+          "title": "מיץ תפוזים / לימונדה",
+          "description": "סחוט טרי",
+          "price": {
+            "regular": 8
+          }
+        },
+        {
+          "title": "תה",
+          "price": {
+            "regular": "כוס 5₪ / קנקן 10"
+          }
+        },
+        {
+          "title": "קפה שחור",
+          "price": {
+            "regular": 5,
+            "member": 6
+          }
+        },
+        {
+          "title": "אספרסו",
+          "price": {
+            "regular": "קצר 8₪ / ארוך 9"
+          }
+        },
+        {
+          "title": "אמריקנו",
+          "price": {
+            "regular": "קטן 5₪ / גדול 10"
+          }
+        },
+        {
+          "title": "קפוצינו",
+          "price": {
+            "regular": "קטן 10₪ / גדול 13₪"
+          }
+        },
+        {
+          "title": "שוקו חם",
+          "price": {
+            "regular": "14"
+          }
+        },
+        {
+          "title": "קפה קר",
+          "price": {
+            "regular": "12"
+          }
+        },
+        {
+          "title": "תה קר",
+          "description": "תוספת שוט ג'ין או וויסקי ב-8₪",
+          "price": {
+            "regular": "8"
+          }
+        }
+      ]
+    },
+    {
+      "title": "אלכוהול",
+      "items": [
+        { "title": "½ סאן מיגל (פחית)", "price": { "regular": 18, "member": 15 } },
+        { "title": "⅓ טייבה (בקבוק)", "price": { "regular": 20, "member": 18 } },
+        { "title": "סיידר סבנה", "price": { "regular": 24, "member": 20 } },
+        { "title": "יין אדום / לבן", "price": { "regular": 18, "member": 15 } }
+      ]
+    }
+  ]
+}
