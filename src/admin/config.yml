@@ -1,43 +1,41 @@
 backend:
   name: git-gateway
+  repo: 'imbalacoop/imbala'
+  squash_merges: true
+
+site_url: 'https://imbala.community'
 
 publish_mode: editorial_workflow
 media_folder: '/images/uploads'
-public_folder: '/images/uploads'
 
 collections:
-  - name: 'menu'
-    label: 'Menu'
-    folder: 'site/_data/menu.json'
-    extension: 'json'
+  - name: 'test'
+    label: 'Test'
+    folder: 'src/_data/test.json'
     create: true
-    delete: false
-    editor:
-      preview: false
+    fields:
+      - { label: 'Name', name: 'name', widget: 'string' }
+# collections:
+#   - name: 'menu'
+#     label: 'Menu'
+#     folder: 'site/_data/menu.json'
+#     extension: 'json'
+#     create: true
+#     delete: false
+#     editor:
+#       preview: false
 
-    files:
-      - name: 'menu'
-        label: 'Menu'
-        file: 'site/_data/menu.json'
-        description: `Imbala's Menu`
-        fields:
-          - { label: 'Global title', name: 'site_title', widget: 'string' }
-          - label: 'Post Settings'
-            name: posts
-            widget: 'object'
-            fields:
-              - {
-                  label: 'Number of posts on frontpage',
-                  name: front_limit,
-                  widget: number,
-                  min: 1,
-                  max: 10,
-                }
-              - { label: 'Default Author', name: author, widget: string }
-              - {
-                  label: 'Default Thumbnail',
-                  name: thumb,
-                  widget: image,
-                  class: 'thumb',
-                  required: false,
-                }
+#     files:
+#       - name: 'nav'
+#         label: 'Navigation'
+#         file: 'src/site/_data/nav.json'
+#         description: `Nav`
+#         fields:
+#           - label: 'English'
+#             name: 'en'
+#             widget: 'object'
+#             fields:
+#               - { label: 'About', name: 'about', widget: 'string' }
+#               - { label: 'Cafe', name: 'cafe', widget: 'string' }
+#               - { label: 'Join', name: 'join', widget: 'string' }
+#               - { label: 'Address', name: 'address', widget: 'string' }
