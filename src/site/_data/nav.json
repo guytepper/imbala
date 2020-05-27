@@ -2,12 +2,14 @@
   "en": {
     "about": "About",
     "cafe": "Cafè",
+    "events": "Events",
     "join": "Join Us",
     "address": "Yanai 3, Jerusalem"
   },
   "he": {
     "about": "מי אנחנו",
     "cafe": "בית קפה",
+    "events": "אירועים",
     "join": "הצטרפו אלינו",
     "address": "ינאי 3, ירושלים"
   }

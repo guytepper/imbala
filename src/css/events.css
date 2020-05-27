@@ -1,0 +1,33 @@
+.event-box {
+  padding: 16px 17px;
+  background-color: #ffdd56;
+  color: #383838;
+}
+
+.event-box__date {
+  font-size: 17px;
+  font-weight: bold;
+  color: #ea733b;
+}
+
+.event-box__title {
+  margin: 6px 0 10px;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.event-box__description {
+  margin-bottom: 15px;
+}
+
+@media (min-width: 1024px) {
+  .events {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1440px) {
+  .events {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
