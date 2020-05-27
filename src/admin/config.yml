@@ -9,13 +9,18 @@ publish_mode: editorial_workflow
 media_folder: '/images/uploads'
 
 collections:
-  - name: 'test'
-    label: 'Test'
-    folder: 'src/_data/test.json'
-    create: true
-    fields:
-      - { label: 'Name', name: 'name', widget: 'string' }
-# collections:
+collections:
+  - name: 'events' # Used in routes, e.g., /admin/collections/blog
+    label: 'Events' # Used in the UI
+    folder: 'site/_data/events' # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: '{{year}}-{{month}}-{{title}}' # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'URL', name: 'event_url', widget: 'string' }
+      - { label: 'Start Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'markdown' }
+
 #   - name: 'menu'
 #     label: 'Menu'
 #     folder: 'site/_data/menu.json'
