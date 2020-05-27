@@ -1,0 +1,43 @@
+backend:
+  name: git-gateway
+
+publish_mode: editorial_workflow
+media_folder: '/images/uploads'
+public_folder: '/images/uploads'
+
+collections:
+  - name: 'menu'
+    label: 'Menu'
+    folder: 'site/_data/menu.json'
+    extension: 'json'
+    create: true
+    delete: false
+    editor:
+      preview: false
+
+    files:
+      - name: 'menu'
+        label: 'Menu'
+        file: 'site/_data/menu.json'
+        description: `Imbala's Menu`
+        fields:
+          - { label: 'Global title', name: 'site_title', widget: 'string' }
+          - label: 'Post Settings'
+            name: posts
+            widget: 'object'
+            fields:
+              - {
+                  label: 'Number of posts on frontpage',
+                  name: front_limit,
+                  widget: number,
+                  min: 1,
+                  max: 10,
+                }
+              - { label: 'Default Author', name: author, widget: string }
+              - {
+                  label: 'Default Thumbnail',
+                  name: thumb,
+                  widget: image,
+                  class: 'thumb',
+                  required: false,
+                }
