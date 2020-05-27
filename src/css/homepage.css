@@ -7,16 +7,31 @@
 }
 
 .homepage-content {
+  min-height: 100vh;
   padding-top: 50px;
-  text-align: center;
-  font-size: 30px;
-  line-height: 40px;
-  letter-spacing: -0.96px;
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
-  background-image: url('/images/imbala-bg.jpg');
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 30%,
+      rgba(0, 0, 0, 0.65) 100%
+    ),
+    url('/images/imbala-bg.jpg');
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
+  color: #fff;
+}
+
+.homepage-hero-text {
+  text-align: center;
+  font-size: 31px;
+  line-height: 45px;
+  letter-spacing: -0.96px;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+:lang(he) .homepage-hero-text {
+  font-size: 36px;
 }
 
 .homepage-actions-buttons {
@@ -29,19 +44,19 @@
 
 .homepage-actions-buttons .imbala-button {
   width: unset;
+  min-width: 120px;
+  margin: 10px;
   flex: 1 1 180px;
 }
 
-.homepage-hero-address {
-  font-size: 20px;
-  letter-spacing: -0.8px;
-  font-family: var(--sub-font);
-  color: #ecf0f1;
+.homepage-slogan {
+  font-style: italic;
+  font-size: 25px;
+  line-height: 35px;
 }
 
-.homepage-hero-address-line {
-  display: block;
-  margin: -11px 0;
+:lang(he) .homepage-slogan {
+  font-size: 28px;
 }
 
 @media (min-width: 572px) {
@@ -67,6 +82,7 @@
   }
 
   .homepage-actions-buttons {
+    width: 560px;
     justify-content: space-between;
   }
 

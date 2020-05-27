@@ -1,20 +1,39 @@
 :root {
   --nav-width: 260px;
-  --main-font: Georgia, 'Times New Roman', Times, serif;
+  --main-font: 'Headland One', Georgia, serif;
   --sub-font: Simpler, -apple-system, system-ui, sans-serif;
+}
+
+[dir='rtl'] {
+  --main-font: 'Suez One', 'Times New Roman', serif;
 }
 
 @font-face {
   font-family: 'Simpler';
   font-style: normal;
-  font-weight: normal;
-  src: local('Simpler Regular'), url('css/Simpler-Regular.woff') format('woff');
+  font-weight: 400;
+  font-display: fallback;
+  src: local('Simpler Regular'), url('/css/fonts/Simpler-Regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Simpler';
-  font-weight: 300;
-  src: local('Simpler Light'), url('css/Simpler-Light.woff') format('woff');
+  font-weight: 100;
+  font-display: fallback;
+  src: local('Simpler Light'), url('/css/fonts/Simpler-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Simpler';
+  font-weight: 700;
+  font-display: fallback;
+  src: local('Simpler Bold'), url('/css/fonts/Simpler-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Headland One';
+  font-display: fallback;
+  src: local('Headland One'), url('/css/fonts/HeadlandOne-Regular.woff2') format('woff2');
 }
 
 html {
@@ -26,11 +45,21 @@ html {
   box-sizing: inherit;
 }
 
+input[type='text'],
+input[type='email'],
+input[type='password'],
+textarea {
+  -webkit-appearance: none;
+}
+
 body {
   min-height: 100vh;
   margin: 0;
   font-family: var(--main-font);
-  color: #fff;
+}
+
+a {
+  text-decoration: none;
 }
 
 @media (min-width: 1024px) {
@@ -41,7 +70,7 @@ body {
   .site-wrapper {
     display: grid;
     height: 100vh;
-    grid-template-columns: [site-nav] 300px [site-content] auto;
+    grid-template-columns: [site-nav] 260px [site-content] auto;
     grid-template-rows: [site-nav site-content] 1fr;
   }
 
@@ -58,4 +87,23 @@ body {
     padding: 12.5px;
     background: #d1a88724;
   }
+
+  @media (min-width: 1440px) {
+    .site-wrapper {
+      grid-template-columns: [site-nav] 290px [site-content] auto;
+    }
+  }
+}
+
+/** Generic global classes **/
+.rtl {
+  direction: rtl;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
 }

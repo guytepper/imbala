@@ -1,0 +1,49 @@
+.landing {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr [content] 3fr 1fr;
+  grid-template-rows: [content] 5fr 0.5fr;
+  background-image: url('/images/landing/frinds01.jpg');
+  background-position: center;
+  background-size: cover;
+  padding-top: 15px;
+}
+
+.landing-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: content;
+}
+
+.landing-logo {
+  width: 225px;
+  margin-bottom: 15px;
+}
+
+.landing-intro {
+  font-size: 28px;
+  font-family: var(--sub-font);
+  color: #fff;
+  text-align: center;
+}
+
+.landing-intro p:first-of-type {
+  margin-bottom: 5px;
+}
+
+.landing-intro p:last-of-type {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.landing-content a:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .landing-logo {
+    width: 300px;
+  }
+}

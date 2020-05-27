@@ -1,19 +1,23 @@
 .imbala-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 280px;
   height: 65px;
-  margin: 10px;
-  appearance: none;
-  background: #ff8800ce;
+  padding-bottom: 6px; /* to center petite caps text */
+  background: #e67e22;
   font-family: var(--sub-font);
-  color: #fff;
-  font-size: 17px;
+  font-size: 25px;
   font-weight: 600;
-  border: 5px solid white;
+  color: #fff;
+  text-decoration: none;
+  border: none;
   border-radius: 7px;
   cursor: pointer;
   transition: all 0.25s;
+  font-variant: all-petite-caps;
 }
 
 .imbala-button:hover {
-  background: #ff88006c;
+  box-shadow: 0 0 0 0.1875rem white, 0 0 0 0.375rem #ff8800ce;
 }

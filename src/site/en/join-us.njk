@@ -1,0 +1,77 @@
+---
+title: 'Join Us'
+backgroundImage: '/images/join-us-thumb.jpg'
+---
+
+{% extends 'layouts/page.njk' %} {% block pageContent %}
+<div class="about-us-content">
+  <p>
+    Imbala is run by and for the members.
+  </p>
+  <p>
+    Members make everything that happens at Imbala possible: from grocery shopping and cooking all
+    our delicious food to planning parties, movie screenings, and more.
+  </p>
+  <p>
+    All decisions about the cooperative, including what's on the menu, how to respond to current
+    events, and what the space looks like are made by consensus during monthly assemblies.
+  </p>
+
+  <p>
+    We invite you to become a part of our dynamic community by becoming a member and joining us.
+  </p>
+
+  <div class="message-box join-us-message-box">
+  <p>Don’t live in Jerusalem, but still care about building a vibrant, active, and nurtured activist community here? Consider supporting us from afar!</p>
+  <p>Become a monthly sustainer through <a href="https://www.patreon.com/imbala" target="_blank">Patreon</a> or support us with a one time donation with Paypal.</p>
+  </div>
+
+  <h3>Who can be a member?</h3>
+
+  <p>
+    Anyone can be a member of Imbala, under the sole condition that one can accept the other members
+    that make up the space.
+  </p>
+  <h3>What does membership entail?</h3>
+  <p>
+    Membership to Imbala requires one 4-hour shift per month, as well as a membership fee of 20 NIS
+    per month.
+  </p>
+  <h3>What are the benefits of membership?</h3>
+  <p>
+    As members of Imbala, you are entitled to discounts on food and drinks, participation in special
+    member-only events, the right to reserve the space for any activities you may want to bring to
+    Imbala - and most importantly you will become a part of our nourishing and flourishing
+    community.
+  </p>
+  <h3>How do I become a member?</h3>
+  <p>
+    Fill the following form and we'll get back to you :)
+  </p>
+
+  <form class="join-us-form" name="join-us" method="POST" data-netlify="true">
+    <p>
+      <label class="join-us-form-label"
+        >Your Name:
+        <input class="join-us-form-input" type="text" name="name" autocomplete="name" required
+      /></label>
+    </p>
+    <p>
+      <label class="join-us-form-label"
+        >Your Email:
+        <input class="join-us-form-input" type="email" name="email" autocomplete="email" required
+      /></label>
+    </p>
+
+    <p>
+      <label class="join-us-form-label"
+        >Message (optional): <textarea class="join-us-form-input" name="message"></textarea>
+      </label>
+    </p>
+    <p>
+      <button class="imbala-button" type="submit">Send</button>
+    </p>
+  </form>
+</div>
+
+{% endblock %}
