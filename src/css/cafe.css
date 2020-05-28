@@ -33,11 +33,6 @@
   font-weight: 400;
 }
 
-.rtl .cafe-header-hours-time {
-  justify-self: flex-start;
-  direction: ltr;
-}
-
 .cafe-menu-section {
   display: grid;
   gap: 20px;
@@ -97,12 +92,6 @@
     margin-inline-end: 40px;
   }
 
-  .cafe-header-hours-entry {
-    display: grid;
-    grid-template-columns: 3.5fr 1fr;
-    font-weight: 100;
-  }
-
   .cafe-menu-item-desc {
     flex-direction: row;
     justify-content: space-between;
@@ -111,5 +100,22 @@
   .cafe-menu-item-desc-text {
     margin-inline-end: 10px;
     line-height: 24px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .cafe-header-hours-entries {
+    padding-inline-start: 8px;
+  }
+
+  .cafe-header-hours-entry {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    font-weight: 100;
+  }
+
+  .rtl .cafe-header-hours-time {
+    justify-self: flex-start;
+    direction: ltr;
   }
 }
