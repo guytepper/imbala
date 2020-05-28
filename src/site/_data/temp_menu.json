@@ -12,16 +12,8 @@
           }
         },
         {
-          "title": "Muffin",
-          "description": "don't leave without trying them",
-          "price": {
-            "regular": 10,
-            "member": 8
-          }
-        },
-        {
           "title": "Cookie",
-          "description": "reach nirvana in 2 bites.",
+          "description": "reach nirvana in 2 bites",
           "price": {
             "regular": "4nis / 3 cookies for 10"
           }
@@ -113,16 +105,8 @@
           }
         },
         {
-          "title": "מאפין",
-          "description": "התייאשתם מהעולם? איבדתן רצון לחיות? המאפין שלנו נאפה במיוחד בשביל מצבים כאלה",
-          "price": {
-            "regular": 10,
-            "member": 8
-          }
-        },
-        {
           "title": "עוגיה",
-          "description": "גם העוגיות מעולות! ",
+          "description": "התייאשתם מהעולם? איבדתן רצון לחיות? העוגיות שלנו נאפות במיוחד בשביל מצבים כאלה",
           "price": {
             "regular": "₪ 4 / 3 עוגיות ב- 10"
           }
