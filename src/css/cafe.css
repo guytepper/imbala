@@ -72,6 +72,33 @@
   font-weight: 100;
 }
 
+.rtl .cafe-menu-item-desc-price {
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  font-weight: 200;
+}
+
+.menu-footer {
+  margin-top: 17.5px;
+}
+
+.menu-footer-note {
+  margin: 7px 0 7px;
+  font-weight: 100;
+}
+
+.menu-footer-note-ast {
+  position: absolute;
+  user-select: none;
+}
+
+.ltr .menu-footer-note-ast {
+  transform: translate(-15px, -2px);
+}
+
+.rtl .menu-footer-note-ast {
+  transform: translateX(15px);
+}
+
 @media (min-width: 1024px) {
   .cafe-header {
     flex-direction: row;
@@ -98,6 +125,7 @@
   }
 
   .cafe-menu-item-desc-text {
+    max-width: 80%;
     margin-inline-end: 10px;
     line-height: 24px;
   }
