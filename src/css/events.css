@@ -56,6 +56,11 @@
   .event-box-wrapper {
     margin-bottom: unset;
   }
+
+  .event-box {
+    height: 180px;
+    overflow: scroll;
+  }
 }
 @media (min-width: 1280px) {
   .events {
