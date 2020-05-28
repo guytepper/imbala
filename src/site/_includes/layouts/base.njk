@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="{{ locale }}" {% if (locale == 'he') %} dir="rtl" class="rtl" {% else %} class="ltr"  {% endif %}>
   <head>
@@ -11,7 +13,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
-    <title>{%- if title -%}{{ title }} - Imbala{%- else -%}Imbala{%- endif -%}</title>
+    <title>
+      {%- if title -%}{{ title }} -&#x0020;{%- endif -%}{% if locale == 'en' %}Imbala{% elseif locale == 'he' %}אםבאלה{% elseif locale == 'ar' %}مبلا{% endif %}
+    </title>
   </head>
   <body class="no-js">
   <div class="site-wrapper">
