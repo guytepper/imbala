@@ -22,9 +22,9 @@
       <address class="nav-footer-address">{{ nav[locale].address }}</address>
 
       {% if locale == 'he' %}
-      <div class="nav-footer-lang"><a href="/en/{{ page.fileSlug }}" lang="en" hreflang="en">English</a> / العربية</div>
+      <div class="nav-footer-lang"><a href={% if page.fileSlug == 'he' %}"/en/"{% else %}"/en/{{ page.fileSlug }}"{% endif %} lang="en" hreflang="en">English</a> / العربية</div>
       {% elseif locale == 'en' %}
-      <div class="nav-footer-lang"><a href="/he/{{ page.fileSlug }}" lang="he" hreflang="he">עברית</a> / العربية</div>
+      <div class="nav-footer-lang"><a href={% if page.fileSlug == 'en' %}"/he/"{% else %}"/he/{{ page.fileSlug }}"{% endif %} lang="he" hreflang="he">עברית</a> / العربية</div>
       {% endif %}
       <div class="nav-footer-social">
         <a
