@@ -12,16 +12,8 @@
           }
         },
         {
-          "title": "Muffin",
-          "description": "don't leave without trying them",
-          "price": {
-            "regular": 10,
-            "member": 8
-          }
-        },
-        {
           "title": "Cookie",
-          "description": "reach nirvana in 2 bites.",
+          "description": "reach nirvana in 2 bites",
           "price": {
             "regular": "4nis / 3 cookies for 10"
           }
@@ -113,18 +105,10 @@
           }
         },
         {
-          "title": "מאפין",
-          "description": "אל תצאו בלי לנסות אותו",
-          "price": {
-            "regular": 10,
-            "member": 8
-          }
-        },
-        {
           "title": "עוגיה",
-          "description": "הגיעו לגאולה ב-2 ביסים",
+          "description": "התייאשתם מהעולם? איבדתן רצון לחיות? העוגיות שלנו נאפות במיוחד בשביל מצבים כאלה",
           "price": {
-            "regular": "₪4 / 3 עוגיות ב- 10"
+            "regular": "₪ 4 / 3 עוגיות ב- 10"
           }
         }
       ]
@@ -142,7 +126,7 @@
         {
           "title": "תה",
           "price": {
-            "regular": "כוס 5₪ / קנקן 10"
+            "regular": "כוס 5 ₪ / קנקן 10"
           }
         },
         {
@@ -155,19 +139,19 @@
         {
           "title": "אספרסו",
           "price": {
-            "regular": "קצר 8₪ / ארוך 9"
+            "regular": "קצר 8 ₪ / ארוך 9"
           }
         },
         {
           "title": "אמריקנו",
           "price": {
-            "regular": "קטן 5₪ / גדול 10"
+            "regular": "קטן 5 ₪ / גדול 10"
           }
         },
         {
           "title": "קפוצינו",
           "price": {
-            "regular": "קטן 10₪ / גדול 13₪"
+            "regular": "קטן 10 ₪ / גדול 13"
           }
         },
         {
@@ -184,7 +168,7 @@
         },
         {
           "title": "תה קר",
-          "description": "תוספת שוט ג'ין או וויסקי ב-8₪",
+          "description": "תוספת שוט ג'ין או וויסקי ב-8 ₪",
           "price": {
             "regular": "8"
           }

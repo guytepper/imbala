@@ -50,14 +50,21 @@ backgroundImage: '/images/cafe-thumb.jpg'
         <div class="cafe-menu-item-desc">
           <h5 class="cafe-menu-item-desc-text">{{ item.description | safe }}</h5>
           <span class="cafe-menu-item-desc-price"
-            >{{ item.price.regular }}{% if item.price.member %}/{{ item.price.member }}{% endif
-            %}₪</span
+            >{{ item.price.regular }} ₪ {% if item.price.member %} / {{ item.price.member }} ₪{% endif
+            %}</span
           >
         </div>
       </div>
       {%- endfor -%}
     </div>
     {%- endfor -%}
+      
+          <footer class="menu-footer">
+          <p class="menu-footer-note"><span class="menu-footer-note-ast">∗</span> כאשר מופיעים שני מחירים, הזול מביניהם יותר הוא לחברי אםבאלה</p>
+          <p class="menu-footer-note"><span class="menu-footer-note-ast">∗</span> מידע על אלרגנים: המטבח אינו מכיל מוצרים מן החי. המטבח אינו סטרילי מאלרגנים. 
+מוזמנות לפנות אלינו לשאלות.</p>
+          <p class="menu-footer-note"><span class="menu-footer-note-ast">∗</span> אנחנו לא מקבלות אשראי, אבל במקרה הצורך, שאלו אותנו לגבי תשלום בביט ופייבוקס</p>
+      </footer>
   </div>
   {% endblock %}
 </div>
