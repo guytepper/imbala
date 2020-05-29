@@ -11,7 +11,7 @@ media_folder: '/images/uploads'
 collections:
   - name: 'events' # Used in routes, e.g., /admin/collections/blog
     label: 'Events' # Used in the UI
-    folder: 'site/_data/events' # The path to the folder where the documents are stored
+    folder: 'src/site/_data/events' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     preview: false
     slug: '{{year}}-{{month}}-{{day}}-{{title_en}}' # Filename template, e.g., YYYY-MM-DD-title.md
