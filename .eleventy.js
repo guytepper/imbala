@@ -2,7 +2,14 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'src/js': 'js' });
   eleventyConfig.addPassthroughCopy({ 'src/css/fonts': 'css/fonts' });
   eleventyConfig.addPassthroughCopy({ 'src/images': 'images' });
-  eleventyConfig.addPassthroughCopy({ 'src/admin': 'admin' });
+
+  config.addCollection('events', function (collection) {
+    let allEvents = collection.getFilteredByGlob('src/site/_data/events/*.md');
+    let futureEvents = allEvents.filter((event) => {
+      return new Date(event.data.date) >= new Date();
+    });
+    return futureEvents;
+  });
 
   return {
     dir: {
