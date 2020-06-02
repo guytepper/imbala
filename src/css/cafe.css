@@ -99,14 +99,22 @@
   transform: translateX(15px);
 }
 
+.cafe-menu-top-message {
+  border-radius: 4px;
+  padding: 9px 10px;
+  color: #000;
+  font-weight: 900;
+  background: #ffdcda;
+  border: 1px dashed tomato;
+  grid-row: 2 / 3;
+  grid-column: 1 / -1;
+}
+
 @media (min-width: 1024px) {
   .cafe-header {
-    flex-direction: row;
-  }
-
-  .cafe-header-intro,
-  .cafe-header-hours {
-    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 70px;
   }
 
   .cafe-menu-section {
