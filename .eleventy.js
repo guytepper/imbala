@@ -3,12 +3,13 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'src/css/fonts': 'css/fonts' });
   eleventyConfig.addPassthroughCopy({ 'src/images': 'images' });
 
-  config.addCollection('events', function (collection) {
-    let allEvents = collection.getFilteredByGlob('src/site/_data/events/*.md');
-    let futureEvents = allEvents.filter((event) => {
-      return new Date(event.data.date) >= new Date();
-    });
-    return futureEvents;
+  eleventyConfig.addCollection('events', function (collection) {
+    let allEvents = collection.getFilteredByGlob('**/*.md');
+    // let futureEvents = allEvents.filter((event) => {
+    //   return new Date(event.data.date) >= new Date();
+    // });
+    console.log(allEvents);
+    return allEvents;
   });
 
   return {

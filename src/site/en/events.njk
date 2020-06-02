@@ -1,11 +1,13 @@
 ---
 title: 'Events'
-backgroundImage: '/images/cafe-thumb.jpg'
+backgroundImage: '/images/events-bg.jpg'
 ---
 
 {% extends 'layouts/page.njk' %} {% block pageContent %}
 
 <div class="events">
+{% for event in events %}
+{{event.data.title_en}}
   <div class="event-box-wrapper">
     <div class="event-box">
       <div class="event-box__date">JUN 3, 12:00 - 14:00</div>
@@ -16,6 +18,7 @@ backgroundImage: '/images/cafe-thumb.jpg'
       <a class="">facebook event</a>
     </div>
   </div>
+  {% endfor %}
   <div class="event-box-wrapper queer-bg">
     <div class="event-box">
       <div class="event-box__date">JUN 3, 12:00 - 14:00</div>
