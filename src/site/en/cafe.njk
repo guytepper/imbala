@@ -36,11 +36,12 @@ backgroundImage: '/images/cafe-thumb.jpg'
       </div>
     </div>
   </div>
+  <p class="bold cafe-menu-top-message">Due to the COVID-19 Ministry of Health restrictions we are serving a temporary menu with limited options.</p>
 </div>
 
 <div class="cafe-menu">
   <div>
-    {%- for section in menu -%}
+    {%- for section in temp_menu['en'] -%}
     <h2 class="cafe-menu-section-title">{{ section.title }}</h2>
 
     <div class="cafe-menu-section">
@@ -58,6 +59,11 @@ backgroundImage: '/images/cafe-thumb.jpg'
       {%- endfor -%}
     </div>
     {%- endfor -%}
+    <footer>
+          <p class="menu-footer-note"><span class="menu-footer-note-ast">∗</span> When there are two prices, the cheaper one is the price for members of the cooperative.</p>
+          <p class="menu-footer-note"><span class="menu-footer-note-ast">∗</span> Our kitchen is free from animal products. If you have any allergen-related questions, please ask.</p>
+          <p class="menu-footer-note"><span class="menu-footer-note-ast">∗</span> We do not accept credit cards, but if needed ask us about Bit or PayBox payment.</p>
+      </footer>
   </div>
   {% endblock %}
 </div>

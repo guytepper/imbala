@@ -1,5 +1,6 @@
 ---
 title: 'בית קפה'
+description: 'אםבאלה הוא קואופרטיב ובית קפה טבעוני בירושלים, המגיש אוכל בריא, טעים ומתומחר בהגינות.'
 backgroundImage: '/images/cafe-thumb.jpg'
 ---
 
@@ -12,6 +13,7 @@ backgroundImage: '/images/cafe-thumb.jpg'
     <p>
 נשמח לארח אתכן לקפה, סעודה עם חברות או עבודה עם הלפטופ בשעות הפעילות שלנו.    </p>
   </div>
+  
   <div class="cafe-header-hours">
     <div class="message-box">
       <h2 class="cafe-header-hours-title">שעות פתיחה</h2>
@@ -35,11 +37,13 @@ backgroundImage: '/images/cafe-thumb.jpg'
       </div>
     </div>
   </div>
+  <p class="bold cafe-menu-top-message">בשל הנחיות משרד הבריאות אנחנו מגישות תפריט זמני ומצומצם.</p>
+
 </div>
 
 <div class="cafe-menu">
   <div>
-    {%- for section in menu -%}
+    {%- for section in temp_menu['he'] -%}
     <h2 class="cafe-menu-section-title">{{ section.title }}</h2>
 
     <div class="cafe-menu-section">
@@ -49,14 +53,21 @@ backgroundImage: '/images/cafe-thumb.jpg'
         <div class="cafe-menu-item-desc">
           <h5 class="cafe-menu-item-desc-text">{{ item.description | safe }}</h5>
           <span class="cafe-menu-item-desc-price"
-            >{{ item.price.regular }}{% if item.price.member %}/{{ item.price.member }}{% endif
-            %}₪</span
+            >{{ item.price.regular }} ₪ {% if item.price.member %} / {{ item.price.member }} ₪{% endif
+            %}</span
           >
         </div>
       </div>
       {%- endfor -%}
     </div>
     {%- endfor -%}
+      
+          <footer class="menu-footer">
+          <p class="menu-footer-note"><span class="menu-footer-note-ast">∗</span> כאשר מופיעים שני מחירים, הזול מביניהם יותר הוא לחברי אםבאלה</p>
+          <p class="menu-footer-note"><span class="menu-footer-note-ast">∗</span> מידע על אלרגנים: המטבח אינו מכיל מוצרים מן החי. המטבח אינו סטרילי מאלרגנים. 
+מוזמנות לפנות אלינו לשאלות.</p>
+          <p class="menu-footer-note"><span class="menu-footer-note-ast">∗</span> אנחנו לא מקבלות אשראי, אבל במקרה הצורך, שאלו אותנו לגבי תשלום בביט ופייבוקס</p>
+      </footer>
   </div>
   {% endblock %}
 </div>

@@ -49,16 +49,6 @@
   flex: 1 1 180px;
 }
 
-.homepage-slogan {
-  font-style: italic;
-  font-size: 25px;
-  line-height: 35px;
-}
-
-:lang(he) .homepage-slogan {
-  font-size: 28px;
-}
-
 @media (min-width: 572px) {
   .homepage-hero {
     height: 100vh;

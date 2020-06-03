@@ -33,11 +33,6 @@
   font-weight: 400;
 }
 
-.rtl .cafe-header-hours-time {
-  justify-self: flex-start;
-  direction: ltr;
-}
-
 .cafe-menu-section {
   display: grid;
   gap: 20px;
@@ -50,6 +45,11 @@
   letter-spacing: -2px;
   text-transform: uppercase;
   box-shadow: 0px 1px 0px 0px #d3d3d3, 0px 5px 0px 0px #fff, 0px 6px 0px 0px #d3d3d3;
+}
+
+.rtl .cafe-menu-section-title {
+  letter-spacing: 0;
+  font-weight: 100;
 }
 
 .cafe-menu-item-title {
@@ -72,14 +72,49 @@
   font-weight: 100;
 }
 
+.rtl .cafe-menu-item-desc-price {
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  font-weight: 200;
+}
+
+.menu-footer {
+  margin-top: 17.5px;
+}
+
+.menu-footer-note {
+  margin: 7px 0 7px;
+  font-weight: 100;
+}
+
+.menu-footer-note-ast {
+  position: absolute;
+  user-select: none;
+}
+
+.ltr .menu-footer-note-ast {
+  transform: translate(-15px, -2px);
+}
+
+.rtl .menu-footer-note-ast {
+  transform: translateX(15px);
+}
+
+.cafe-menu-top-message {
+  border-radius: 4px;
+  padding: 9px 10px;
+  color: #000;
+  font-weight: 900;
+  background: #ffdcda;
+  border: 1px dashed tomato;
+  grid-row: 2 / 3;
+  grid-column: 1 / -1;
+}
+
 @media (min-width: 1024px) {
   .cafe-header {
-    flex-direction: row;
-  }
-
-  .cafe-header-intro,
-  .cafe-header-hours {
-    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 70px;
   }
 
   .cafe-menu-section {
@@ -92,19 +127,31 @@
     margin-inline-end: 40px;
   }
 
-  .cafe-header-hours-entry {
-    display: grid;
-    grid-template-columns: 3.5fr 1fr;
-    font-weight: 100;
-  }
-
   .cafe-menu-item-desc {
     flex-direction: row;
     justify-content: space-between;
   }
 
   .cafe-menu-item-desc-text {
-    margin-right: 10px;
+    max-width: 80%;
+    margin-inline-end: 10px;
     line-height: 24px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .cafe-header-hours-entries {
+    padding-inline-start: 8px;
+  }
+
+  .cafe-header-hours-entry {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    font-weight: 100;
+  }
+
+  .rtl .cafe-header-hours-time {
+    justify-self: flex-start;
+    direction: ltr;
   }
 }
