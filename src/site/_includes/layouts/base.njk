@@ -1,12 +1,12 @@
 
 
 <!DOCTYPE html>
-<html lang="{{ locale }}" {% if (locale == 'he') %} dir="rtl" class="rtl" {% else %} class="ltr"  {% endif %}>
+<html lang="{{ locale }}" {% if (locale == 'he') or (locale == 'ar') %} dir="rtl" class="rtl" {% else %} class="ltr"  {% endif %}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/imbala.css">
-    {% if locale == 'he' %}
+    {% if (locale == 'he') or (locale == 'ar') %}
     <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
     {% endif %}
     <script src="/js/index.js" defer></script>
