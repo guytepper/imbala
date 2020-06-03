@@ -184,5 +184,98 @@
         { "title": "יין אדום / לבן", "price": { "regular": 18, "member": 15 } }
       ]
     }
+  ],
+  "ar": [
+    {
+      "title": "طعام",
+      "items": [
+        {
+          "title": "حمص من البلدة القديمه",
+          "description": "مقدم الى جانب خبز عربي, خيار, بندوره ومخلّل",
+          "price": {
+            "regular": 25,
+            "member": 20
+          }
+        },
+        {
+          "title": "بسكويت",
+          "description": "أبو نَتِشْتين",
+          "price": {
+            "regular": "₪ 4 / 3 ملفات تعريف ارتباط لـ 10"
+          }
+        }
+      ]
+    },
+    {
+      "title": "المشروبات",
+      "items": [
+        {
+          "title": "عصير برتقال/ليموناده",
+          "description": "معصور طازه",
+          "price": {
+            "regular": 8
+          }
+        },
+        {
+          "title": "شاي",
+          "price": {
+            "regular": "زجاج 5 ₪ / إبريق 10"
+          }
+        },
+        {
+          "title": "قهوه سودا",
+          "price": {
+            "regular": 5,
+            "member": 6
+          }
+        },
+        {
+          "title": "اسبرسو",
+          "price": {
+            "regular": "קצר 8 ₪ / ארוך 9"
+          }
+        },
+        {
+          "title": "أمريكانو",
+          "price": {
+            "regular": "קטן 5 ₪ / גדול 10"
+          }
+        },
+        {
+          "title": "كابوتشينو",
+          "price": {
+            "regular": "קטן 10 ₪ / גדול 13"
+          }
+        },
+        {
+          "title": "شوكو سخن",
+          "price": {
+            "regular": "14"
+          }
+        },
+        {
+          "title": "قهوة بارده",
+          "price": {
+            "regular": "12"
+          }
+        },
+        {
+          "title": "شاي بارد",
+          "description": "امكانيّة إضافة وجبة جين أو ويسكي ب8 شيكل",
+          "price": {
+            "regular": "8"
+          }
+        }
+      ]
+    },
+    {
+      "title": "المشروبات الكحوليّه",
+      "items": [
+        { "title": "½ سان ميچيل (علبة", "price": { "regular": 18, "member": 15 } },
+        { "title": "⅓ طيبه (قنينه)", "price": { "regular": 20, "member": 18 } },
+        { "title": "سايدر ساڤا", "price": { "regular": 24, "member": 20 } },
+        { "title": "نبيذ أحمر / أبيض", "price": { "regular": 18, "member": 15 } }
+      ]
+    }
   ]
 }

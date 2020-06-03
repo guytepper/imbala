@@ -6,26 +6,23 @@ backgroundImage: '/images/cafe-thumb.jpg'
 {% extends 'layouts/page.njk' %} {% block pageContent %}
 <div class="cafe-header">
   <div class="cafe-header-intro">
-    <p>
-בית הקפה שלנו מגיש אוכל בריא, טעים ומתומחר בהגינות שמבושל ומוגש על ידי חברי וחברות אםבאלה.
-    </p>
-    <p>
-נשמח לארח אתכן לקפה, סעודה עם חברות או עבודה עם הלפטופ בשעות הפעילות שלנו.    </p>
+    <p>مقهانا يقوم يتقديم أكل صحي, لذيذ ومسعّر بإنصاف والذي يُطبخ ويُقدّم على أيدي أعضاء وعضوات إمبلا</p>
+    <p>تسرّنا استضافتكم لقهوه, لوجبه مع صديقات أو للعمل على الحاسوب المحمول بساعات دوامنا.</p>
   </div>
   <div class="cafe-header-hours">
     <div class="message-box">
       <h2 class="cafe-header-hours-title">ساعات العمل</h2>
       <div class="cafe-header-hours-entries">
         <div class="cafe-header-hours-entry">
-          <span class="cafe-header-hours-day">الأول والثاني والثالث</span>
+          <span class="cafe-header-hours-day">الأحد, الإثنين واٌلثلاثاء</span>
           <span>مغلق</span>
         </div>
         <div class="cafe-header-hours-entry">
-          <span class="cafe-header-hours-day">الاربعاء والخميس</span>
+          <span class="cafe-header-hours-day">الأربعاء والخميس</span>
           <span class="cafe-header-hours-time">12:00 - 21:00</span>
         </div>
         <div class="cafe-header-hours-entry">
-          <span class="cafe-header-hours-day">جمعة</span>
+          <span class="cafe-header-hours-day">الجمعة</span>
           <span class="cafe-header-hours-time">11:00 - 18:00</span>
         </div>
         <div class="cafe-header-hours-entry">
@@ -33,14 +30,15 @@ backgroundImage: '/images/cafe-thumb.jpg'
           <span class="cafe-header-hours-time">12:00 - 23:00</span>
         </div>
       </div>
-
     </div>
+
   </div>
+      <p class="bold cafe-menu-top-message">بسبب توجيهات وزارة الصحه, نقدّم لكُنْ لائحة طعام مؤقته ومصغّرة.</p>
 </div>
 
 <div class="cafe-menu">
   <div>
-    {%- for section in menu -%}
+    {%- for section in temp_menu['ar'] -%}
     <h2 class="cafe-menu-section-title">{{ section.title }}</h2>
 
     <div class="cafe-menu-section">
