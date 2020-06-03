@@ -13,10 +13,10 @@
       to top,
       rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 0) 30%,
-      rgba(0, 0, 0, 0.65) 100%
+      rgba(54, 54, 54, 0.3) 100%
     ),
-    url('/images/imbala-bg.jpg');
-  background-position: right;
+    url('/images/imbala-bg2.jpg');
+  background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
@@ -27,7 +27,7 @@
   font-size: 31px;
   line-height: 45px;
   letter-spacing: -0.96px;
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
 }
 
 :lang(he) .homepage-hero-text {
