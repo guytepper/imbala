@@ -44,9 +44,8 @@
 
 .homepage-actions-buttons .imbala-button {
   width: unset;
-  min-width: 120px;
   margin: 10px;
-  flex: 1 1 180px;
+  flex: 1 1 190px;
 }
 
 @media (min-width: 572px) {
