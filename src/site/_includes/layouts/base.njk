@@ -1,21 +1,22 @@
 
 
 <!DOCTYPE html>
-<html lang="{{ locale }}" {% if (locale == 'he') %} dir="rtl" class="rtl" {% else %} class="ltr"  {% endif %}>
+<html lang="{{ locale }}" {% if (locale == 'he') or (locale == 'ar') %} dir="rtl" class="rtl" {% else %} class="ltr"  {% endif %}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/imbala.css">
-    {% if locale == 'he' %}
+    {% if (locale == 'he') or (locale == 'ar') %}
     <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
     {% endif %}
     <script src="/js/index.js" defer></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
-    <title>
-      {%- if title -%}{{ title }} -&#x0020;{%- endif -%}{% if locale == 'en' %}Imbala{% elseif locale == 'he' %}אםבאלה{% elseif locale == 'ar' %}مبلا{% endif %}
-    </title>
+    <title>{%- if title -%}{{ title }} -&#x0020;{%- endif -%}{% if locale == 'en' %}Imbala{% elseif locale == 'he' %}אםבאלה{% elseif locale == 'ar' %}مبلا{% endif %}</title>
+    {%- if description -%}
+    <meta name="description" content="{{ description }}">
+    {% endif %}
   </head>
   <body class="no-js">
   <div class="site-wrapper">
