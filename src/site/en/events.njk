@@ -6,6 +6,9 @@ backgroundImage: '/images/events-bg.jpg'
 {% extends 'layouts/page.njk' %} {% block pageContent %}
 
 <div class="events">
+<p class="events-message">
+  There are no planned events at the moment.  <a href="https://www.facebook.com/imbalacoop" target="_blank">Follow us on facebook</a> for updates on future evens!
+</p> 
 {% for event in events %}
 {{event.data.title_en}}
   <div class="event-box-wrapper">
@@ -39,6 +42,5 @@ backgroundImage: '/images/events-bg.jpg'
       <a class="">facebook event</a>
     </div>
   </div>
-
 </div>
 {% endblock %}
