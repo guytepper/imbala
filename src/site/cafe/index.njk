@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+    <title>Cafè - Imbala</title>
+    <meta name="og:image" content="/images/favicons/imbala-cafe-thumb.jpg" />
+    <meta name="description" content="Imbala serves high quality, sustainable, vegan, and reasonably priced food made voluntarily Imbala’s members. ">
+    <style>
+      .landing {
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr [content] 3fr 1fr;
+        grid-template-rows: [content] 5fr 0.5fr;
+        background-image: url('/images/landing/frinds01.jpg');
+        background-position: center;
+        background-size: cover;
+        padding-top: 15px;
+      }
+
+      .landing-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-area: content;
+      }
+
+      .landing-logo {
+        width: 225px;
+        margin-bottom: 15px;
+      }
+
+      .landing-intro {
+        font-size: 28px;
+        font-family: var(--sub-font);
+        color: #fff;
+        text-align: center;
+      }
+
+      .landing-intro p:first-of-type {
+        margin-bottom: 5px;
+      }
+
+      .landing-intro p:last-of-type {
+        margin-top: 0px;
+        margin-bottom: 30px;
+      }
+
+      .landing-content a:not(:last-of-type) {
+        margin-bottom: 15px;
+      }
+
+      @media (min-width: 768px) {
+        .landing-logo {
+          width: 300px;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="/css/imbala.css">
+  </head>
+  <body class="no-js landing">
+    <div class="landing-content">
+        <picture>
+          <source
+            type="image/webp"
+            srcset="/images/logo@1x.webp 1x, /images/logo@2x.webp 2x, /images/logo@3x.webp 3x"
+          />
+          <source srcset="/images/logo@1x.png 1x, /images/logo@2x.png 2x, /images/logo@3x.png 3x" />
+          <img src="/images/logo@1x.png" alt="" class="landing-logo" />
+        </picture>        
+        <div class="landing-intro">
+          <p class="rtl bold">Hello, שלום & مرحبا!</p>
+          <p class="landing-intro">what is your preferred language?</p>
+        </div>
+
+      <div>
+        <a class="imbala-button" href="/he/cafe" lang="he" hreflang="he">עברית</a>
+        <a class="imbala-button" href="/ar/cafe" lang="ar" hreflang="ar">العربية</a>
+        <a class="imbala-button" href="/en/cafe" lang="en" hreflang="en">English</a>
+      </div>
+    </div>
+  </body>
+  </div>
+</html>

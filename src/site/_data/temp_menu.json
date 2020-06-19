@@ -21,7 +21,7 @@
         },
         {
           "title": "Lentil and veggies salad",
-          "description": "black lentils, fresh vegetables, antipasti, parsley, lemon and tahini",
+          "description": "black lentils, fresh vegetables, parsley, lemon and tahini",
           "price": {
             "regular": 25,
             "member": 20
@@ -146,7 +146,7 @@
         },
         {
           "title": "סלט עדשים וירקות",
-          "description": "עדשים שחורות, ירקות, אנטיפסטי, פטרוזיליה, לימון כבוש וטחינה",
+          "description": "עדשים שחורות, ירקות, פטרוזיליה, לימון כבוש וטחינה",
           "price": {
             "regular": 25,
             "member": 20
