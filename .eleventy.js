@@ -9,7 +9,6 @@ module.exports = function (eleventyConfig) {
     let futureEvents = allEvents.filter((event) => {
       return new Date(event.data.date) >= new Date();
     });
-    console.log(allEvents[0].data.title_en);
     return allEvents;
   });
 
