@@ -240,10 +240,20 @@
   }
 
   .nav-footer__link--facebook svg {
-    width: 10px;
+    width: 11px;
   }
 
   .nav-footer__link--instagram svg {
-    width: 17px;
+    width: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+    .nav-footer__link--facebook svg {
+    width: 14px;
+  }
+
+  .nav-footer__link--instagram svg {
+    width: 23px;
   }
 }
