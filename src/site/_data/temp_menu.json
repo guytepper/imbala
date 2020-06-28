@@ -36,6 +36,14 @@
           }
         },
         {
+          "title": "Watermelon Bowl",
+          "description": "when you need to cool down",
+          "price": {
+            "regular": "10",
+            "member": "8"
+          }
+        },
+        {
           "title": "Cookie",
           "description": "reach nirvana in 2 bites",
           "price": {
@@ -161,6 +169,14 @@
           }
         },
         {
+          "title": "קערת אבטיח",
+          "description": "ממש כמו קערת אםבאלה רק אבטיח",
+          "price": {
+            "regular": 10,
+            "member": 8
+          }
+        },
+        {
           "title": "עוגיה",
           "description": "התייאשתם מהעולם? איבדתן רצון לחיות? העוגיות שלנו נאפות במיוחד בשביל מצבים כאלה",
           "price": {
@@ -275,6 +291,13 @@
           "price": {
             "regular": 25,
             "member": 20
+          }
+        },
+        {
+          "title": "صحن بطيخ بارد",
+          "price": {
+            "regular": 10,
+            "member": 8
           }
         },
         {
