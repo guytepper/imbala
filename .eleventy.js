@@ -6,10 +6,10 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addCollection('events', function (collection) {
     let allEvents = collection.getFilteredByGlob('**/*.md');
-    // let futureEvents = allEvents.filter((event) => {
-    //   return new Date(event.data.date) >= new Date();
-    // });
-    console.log(allEvents);
+    let futureEvents = allEvents.filter((event) => {
+      return new Date(event.data.date) >= new Date();
+    });
+    console.log(allEvents[0].data.title_en);
     return allEvents;
   });
 

@@ -5,6 +5,7 @@ backend:
 
 site_url: 'https://imbala.community'
 local_backend: true
+url: http://localhost:8080/
 publish_mode: editorial_workflow
 media_folder: '/images/uploads'
 
@@ -24,4 +25,21 @@ collections:
       - { label: 'English Description', name: 'description_en', widget: 'text' }
       - { label: 'Hebrew Description', name: 'description_he', widget: 'text' }
       - { label: 'Arabic Description', name: 'description_ar', widget: 'text' }
+      - {
+          label: 'Background',
+          name: 'background',
+          widget: 'select',
+          default: 'orange',
+          options:
+            [
+              { label: 'Orange', value: 'orange' },
+              { label: 'Red', value: 'red' },
+              { label: 'Green', value: 'green' },
+              { label: 'Azure', value: 'azure' },
+              { label: 'Purple', value: 'purple' },
+              { label: 'Pink', value: 'pink' },
+              { label: 'Grey', value: 'grey' },
+              { label: 'LGBTQ Flag', value: 'queer' },
+            ],
+        }
       - { label: 'Facebook Event URL', name: 'event_url', widget: 'string', required: false }

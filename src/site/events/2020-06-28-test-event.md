@@ -8,4 +8,3 @@ description_he: איוונט בדיקה
 description_ar: اختبار مسائي
 event_url: 'https://www.facebook.com/events/'
 ---
-
