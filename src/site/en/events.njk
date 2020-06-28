@@ -6,8 +6,32 @@ backgroundImage: '/images/events-bg.jpg'
 {% extends 'layouts/page.njk' %} {% block pageContent %}
 
 <div class="events">
-<p class="events-message">
-  There are no planned events at the moment.  <a href="https://www.facebook.com/imbalacoop" target="_blank">Follow us on facebook</a> for updates on future evens!
-</p> 
+  {% if collections.events.length > 0 %} {% for event in collections.events %}
+  <div class="event-box-wrapper {{ event.data.background }}-bg">
+    <div class="event-box">
+      <div class="event-box__date">
+        {{
+          event.data.date.toLocaleDateString(undefined, {
+            weekday: 'long',
+            month: 'short',
+            day: 'numeric'
+          })
+        }}
+        , {{ event.data.date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) }}
+      </div>
+      <h3 class="event-box__title">{{ event.data.title_en }}</h3>
+      <div class="event-box__description">
+        {{ event.data.description_en }}
+      </div>
+      <a href="{{ event.data.event_url }}" target="_blank">facebook event</a>
+    </div>
+  </div>
+  {% endfor %} {% else %}
+  <p class="events-message">
+    There are no planned events at the moment.
+    <a href="https://www.facebook.com/imbalacoop" target="_blank">Follow us on facebook</a> for
+    updates on future evens!
+  </p>
+  {% endif %}
 </div>
 {% endblock %}

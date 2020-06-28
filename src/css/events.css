@@ -5,15 +5,15 @@
 
 .event-box-wrapper {
   background: #ffd208;
-  padding: 3px;
+  padding: 2px;
   margin-bottom: 15px;
 }
 
 .event-box {
-  padding: 9px;
-  margin: 9px 7.5px;
+  padding: 15px;
+  margin: 9px;
   background: #ffffffeb;
-  border: 1px solid black;
+  box-shadow: inset 0px 0px 0px 1px #eee;
   color: #383838;
 }
 
@@ -31,6 +31,30 @@
 
 .event-box__description {
   margin-bottom: 15px;
+}
+
+.green-bg {
+  background-color: #36df7c;
+}
+
+.purple-bg {
+  background-color: #cd84f1;
+}
+
+.pink-bg {
+  background-color: #fd79a8;
+}
+
+.azure-bg {
+  background-color: #70a1ff;
+}
+
+.grey-bg {
+  background-color: #57606f;
+}
+
+.red-bg {
+  background-color: #ff7675;
 }
 
 .queer-bg {
@@ -51,7 +75,7 @@
 }
 
 @media (min-width: 1024px) {
-  .events-wrapper {
+  .events {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
