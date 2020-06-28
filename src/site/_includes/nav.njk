@@ -24,17 +24,17 @@
 
       {% if locale == 'he' %}
       <div class="nav-footer-lang">
-        <a href={% if page.fileSlug == 'he' %}"/en/"{% else %}"/en/{{ page.fileSlug }}"{% endif %} lang="en" hreflang="en">English</a> / 
+        <a href={% if page.fileSlug == 'he' %}"/en/"{% else %}"/en/{{ page.fileSlug }}"{% endif %} lang="en" hreflang="en">English</a>&#32/&#32
         <a href={% if page.fileSlug == 'he' %}"/ar/"{% else %}"/ar/{{ page.fileSlug }}"{% endif %} lang="ar" hreflang="ar">العربية</a>
       </div>
       {% elseif locale == 'en' %}
       <div class="nav-footer-lang">
-        <a href={% if page.fileSlug == 'en' %}"/he/"{% else %}"/he/{{ page.fileSlug }}"{% endif %} lang="he" hreflang="he">עברית</a> /
+        <a href={% if page.fileSlug == 'en' %}"/he/"{% else %}"/he/{{ page.fileSlug }}"{% endif %} lang="he" hreflang="he">עברית</a>&#32/&#32
         <a href={% if page.fileSlug == 'en' %}"/ar/"{% else %}"/ar/{{ page.fileSlug }}"{% endif %} lang="ar" hreflang="ar">العربية</a>
       </div>
       {% elseif locale == 'ar' %}
       <div class="nav-footer-lang">
-        <a href={% if page.fileSlug == 'ar' %}"/he/"{% else %}"/he/{{ page.fileSlug }}"{% endif %} lang="he" hreflang="he">עברית</a> /
+        <a href={% if page.fileSlug == 'ar' %}"/he/"{% else %}"/he/{{ page.fileSlug }}"{% endif %} lang="he" hreflang="he">עברית</a>&#32/&#32
         <a href={% if page.fileSlug == 'ar' %}"/en/"{% else %}"/en/{{ page.fileSlug }}"{% endif %} lang="en" hreflang="en">English</a>
       </div>
       {% endif %}
