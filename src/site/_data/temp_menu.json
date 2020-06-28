@@ -4,8 +4,32 @@
       "title": "Food",
       "items": [
         {
-          "title": "Old City Hummus",
-          "description": "served with pitas, cucumber, tomato, onion and pickles",
+          "title": "Sandwich w/ tahini and vegetables",
+          "description": "tomato, cucumber, radishes and parsley",
+          "price": {
+            "regular": 18,
+            "member": 15
+          }
+        },
+        {
+          "title": "Tofu sandwich",
+          "description": "smoked tofu with veggies and spreads",
+          "price": {
+            "regular": 25,
+            "member": 20
+          }
+        },
+        {
+          "title": "Lentil and veggies salad",
+          "description": "black lentils, fresh vegetables, parsley, lemon and tahini",
+          "price": {
+            "regular": 25,
+            "member": 20
+          }
+        },
+        {
+          "title": "Imbala Bowl",
+          "description": "rice noodles, cucumber and carrot shredding, baked cabbage, pickled onions, smoked tofu and soy-sesame-garlic sauce",
           "price": {
             "regular": 25,
             "member": 20
@@ -16,6 +40,14 @@
           "description": "reach nirvana in 2 bites",
           "price": {
             "regular": "4nis / 3 cookies for 10"
+          }
+        },
+        {
+          "title": "Cupcake",
+          "description": "tired of living in this world? please try our cupcake before losing all hope",
+          "price": {
+            "regular": "10",
+            "member": "8"
           }
         }
       ]
@@ -97,8 +129,32 @@
       "title": "אוכל",
       "items": [
         {
-          "title": "חומוס מהעיר העתיקה",
-          "description": "מוגש עם פיתות, מלפפון, עגבניה וחמוצים",
+          "title": "סנדוויץ'",
+          "description": "מללפון, עגבנייה, צנונית, טחינה ופטרוזיליה",
+          "price": {
+            "regular": 18,
+            "member": 15
+          }
+        },
+        {
+          "title": "סנדוויץ' טופו",
+          "description": "טופו מעושן עם ירקות וממרחים לבחירה",
+          "price": {
+            "regular": 25,
+            "member": 20
+          }
+        },
+        {
+          "title": "סלט עדשים וירקות",
+          "description": "עדשים שחורות, ירקות, פטרוזיליה, לימון כבוש וטחינה",
+          "price": {
+            "regular": 25,
+            "member": 20
+          }
+        },
+        {
+          "title": "קערת אםבאלה",
+          "description": "אטריות אורז, קילופי גזר ומלפפון, כרוב אפוי, בצל כבוש, טופו מעושן ורוטב סויה-שום-שומשום",
           "price": {
             "regular": 25,
             "member": 20
@@ -109,6 +165,14 @@
           "description": "התייאשתם מהעולם? איבדתן רצון לחיות? העוגיות שלנו נאפות במיוחד בשביל מצבים כאלה",
           "price": {
             "regular": "₪ 4 / 3 עוגיות ב- 10"
+          }
+        },
+        {
+          "title": "קאפקייק",
+          "description": "",
+          "price": {
+            "regular": 10,
+            "member": 8
           }
         }
       ]
@@ -190,8 +254,24 @@
       "title": "طعام",
       "items": [
         {
-          "title": "حمص من البلدة القديمه",
-          "description": "مقدم الى جانب خبز عربي, خيار, بندوره ومخلّل",
+          "title": "ساندويش مع طحينة البنجر وخضار",
+          "description": "بندورة، خيار، فجل، بقدونس",
+          "price": {
+            "regular": 18,
+            "member": 15
+          }
+        },
+        {
+          "title": "سلطة العدس والخضراوات",
+          "description": "العدس الأسود، خضراوات، خضار مشوي، ليمون مكبوس، بقدونس، طحينةإضافة توفو مدخن: 5 ش",
+          "price": {
+            "regular": 18,
+            "member": 15
+          }
+        },
+        {
+          "title": "زبدية مبلا",
+          "description": "نودلز الأرز، تمزيقات الجزر والخيار، الملفوف المخبوز، البصل المخلل، التوفو المدخن، وصلصة صويا-ثوم-سمسم",
           "price": {
             "regular": 25,
             "member": 20
