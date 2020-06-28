@@ -11,7 +11,7 @@ media_folder: '/images/uploads'
 collections:
   - name: 'events' # Used in routes, e.g., /admin/collections/blog
     label: 'Events' # Used in the UI
-    folder: 'src/site/_data/events' # The path to the folder where the documents are stored
+    folder: 'src/site/events' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     preview: false
     slug: '{{year}}-{{month}}-{{day}}-{{title_en}}' # Filename template, e.g., YYYY-MM-DD-title.md
@@ -25,26 +25,3 @@ collections:
       - { label: 'Hebrew Description', name: 'description_he', widget: 'text' }
       - { label: 'Arabic Description', name: 'description_ar', widget: 'text' }
       - { label: 'Facebook Event URL', name: 'event_url', widget: 'string', required: false }
-#   - name: 'menu'
-#     label: 'Menu'
-#     folder: 'site/_data/menu.json'
-#     extension: 'json'
-#     create: true
-#     delete: false
-#     editor:
-#       preview: false
-
-#     files:
-#       - name: 'nav'
-#         label: 'Navigation'
-#         file: 'src/site/_data/nav.json'
-#         description: `Nav`
-#         fields:
-#           - label: 'English'
-#             name: 'en'
-#             widget: 'object'
-#             fields:
-#               - { label: 'About', name: 'about', widget: 'string' }
-#               - { label: 'Cafe', name: 'cafe', widget: 'string' }
-#               - { label: 'Join', name: 'join', widget: 'string' }
-#               - { label: 'Address', name: 'address', widget: 'string' }

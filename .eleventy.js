@@ -2,6 +2,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'src/js': 'js' });
   eleventyConfig.addPassthroughCopy({ 'src/css/fonts': 'css/fonts' });
   eleventyConfig.addPassthroughCopy({ 'src/images': 'images' });
+  eleventyConfig.addPassthroughCopy({ 'src/admin': 'admin' });
 
   eleventyConfig.addCollection('events', function (collection) {
     let allEvents = collection.getFilteredByGlob('**/*.md');
