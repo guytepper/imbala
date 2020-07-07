@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: github
   repo: 'imbalacoop/imbala'
   squash_merges: true
 
