@@ -23,7 +23,9 @@ backgroundImage: '/images/events-bg.jpg'
       <div class="event-box__description">
         {{ event.data.description_en }}
       </div>
-      <a href="{{ event.data.event_url }}" target="_blank">facebook event</a>
+       {% if event.data.event_url %}
+        <a href="{{ event.data.event_url }}" target="_blank">facebook event</a>
+      {% endif %}
     </div>
   </div>
   {% endfor %} {% else %}
