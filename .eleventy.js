@@ -7,9 +7,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection('events', function (collection) {
     let allEvents = collection.getFilteredByGlob('**/*.md');
     let futureEvents = allEvents.filter((event) => {
-      return new Date(event.data.date) >= new Date();
+      // Show events until 24 hours afterwards
+      return new Date(event.data.date) >= new Date(Date.now() - 1000 * 60 * 60 * 24);
     });
-    return allEvents;
+    return futureEvents;
   });
 
   return {
