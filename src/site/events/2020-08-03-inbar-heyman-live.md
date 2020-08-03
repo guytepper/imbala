@@ -2,7 +2,7 @@
 title_en: 'Inbar Heyman LIVE '
 title_he: ענבר הימן בהופעה חיה
 title_ar: انبر هيمن في عرض حي
-date: 2020-08-07T09:00:48.550Z
+date: 2020-08-07T12:00:48.550Z
 description_en: >-
   Performance by Inbar Heyman One-Woman-Band with original music on accordion,
   ukulele and percussion 
