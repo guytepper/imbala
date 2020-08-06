@@ -100,21 +100,22 @@
 }
 
 .cafe-menu-top-message {
-  border-radius: 4px;
+  margin: 15px 0 0;
   padding: 9px 10px;
+  grid-column: 1 / -1;
+  align-self: center;
   color: #000;
   font-weight: 900;
   background: #ffdcda;
   border: 1px dashed tomato;
-  grid-row: 2 / 3;
-  grid-column: 1 / -1;
+  border-radius: 4px;
 }
 
 @media (min-width: 1024px) {
   .cafe-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 70px;
+    grid-template-rows: 1fr 50px;
   }
 
   .cafe-menu-section {
