@@ -172,12 +172,16 @@
   fill: #833ab4;
 }
 
-.ltr .nav-footer__link:not(:last-of-type) {
-  margin-right: 18px;
+.nav-footer__link--github:hover path {
+  fill: #000000b4;
 }
 
-.rtl .nav-footer__link:not(:first-of-type) {
-  margin-left: 18px;
+.nav-footer__link--instagram {
+  margin-right: 13.5px;
+}
+
+.nav-footer__link--facebook {
+  margin-right: 18px;
 }
 
 .nav-footer-lang {
@@ -249,11 +253,11 @@
 }
 
 @media (min-width: 1440px) {
-    .nav-footer__link--facebook svg {
+  .nav-footer__link--facebook svg {
     width: 14px;
   }
 
   .nav-footer__link--instagram svg {
-    width: 23px;
+    width: 24px;
   }
 }
