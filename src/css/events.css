@@ -95,7 +95,7 @@
   }
 
   .event-box {
-    min-height: 180px;
+    min-height: calc(100% - 18px);
     overflow: scroll;
   }
 }
