@@ -13,7 +13,14 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
-    <title>{%- if title -%}{{ title }} -&#x0020;{%- endif -%}{% if locale == 'en' %}Imbala{% elseif locale == 'he' %}אםבאלה{% elseif locale == 'ar' %}مبلا{% endif %}</title>
+    <title>
+      {% if  page.url == '/he/' %} 
+      אםבאלה - קהילה ובית קפה בירושלים
+      {% elif page.url == '/en/' %}
+      Imbala - Community & Cafè in Jerusalem
+      {% else %}
+      {%- if title -%}{{ title }} -&#x0020;{%- endif -%}{% if locale == 'en' %}Imbala{% elseif locale == 'he' %}אםבאלה{% elseif locale == 'ar' %}مبلا{% endif %}{% endif %}
+    </title>
     {%- if description -%}
     <meta name="description" content="{{ description }}">
     {% endif %}
