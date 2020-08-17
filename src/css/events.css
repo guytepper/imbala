@@ -82,12 +82,20 @@
     margin: -15px -40px;
   }
 
+  .event-page-subheader:first-of-type {
+    margin: 0 -40px 40px;
+  }
+
+  .event-page-subheader:last-of-type {
+    margin: 40px -40px;
+  }
+
   .event-box-wrapper {
     margin-bottom: unset;
   }
 
   .event-box {
-    min-height: 180px;
+    min-height: calc(100% - 18px);
     overflow: scroll;
   }
 }

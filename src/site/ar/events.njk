@@ -5,8 +5,8 @@ backgroundImage: '/images/events-bg.jpg'
 
 {% extends 'layouts/page.njk' %} {% block pageContent %}
 
-<div class="events">
-  {% if collections.events.length > 0 %} {% for event in collections.events %}
+  {% if collections.events.futureEvents.length > 0 %} <div class="events">{% for event in collections.events.futureEvents %}
+
   <div class="event-box-wrapper {{ event.data.background }}-bg">
     <div class="event-box">
       <div class="event-box__date">
@@ -24,11 +24,32 @@ backgroundImage: '/images/events-bg.jpg'
         {{ event.data.description_ar }}
       </div>
       {% if event.data.event_url %}
-      <a href="{{ event.data.event_url }}" target="_blank">אירוע פייסבוק</a>
+      <a href="{{ event.data.event_url }}" target="_blank">حدث فيسبوك</a>
       {% endif %}
     </div>
   </div>
-  {% endfor %} {% else %}
-<p class="events-message">لا توجد أحداث مخطط لها في الوقت الحالي ، ولكن نرحب دائمًا بزيارتك!</p> 
-</div>
-{% endif %} {% endblock %}
+  {% endfor %} </div>{% endif %} 
+  <h3 class="event-page-subheader">الأحداث السابقة</h3>
+  <div class="events">
+{% for event in collections.events.pastEvents %}
+  <div class="event-box-wrapper {{ event.data.background }}-bg">
+    <div class="event-box">
+      <div class="event-box__date">
+        {{
+          event.data.date.toLocaleDateString('ar-IL', {
+            weekday: 'long',
+            month: 'short',
+            day: 'numeric'
+          })
+        }},
+        {{ event.data.date.toLocaleTimeString('ar-IL', { hour: '2-digit', minute: '2-digit' }) }}
+      </div>
+      <h3 class="event-box__title">{{ event.data.title_ar }}</h3>
+      <div class="event-box__description">
+        {{ event.data.description_ar }}
+      </div>
+      {% if event.data.event_url %}
+      <a href="{{ event.data.event_url }}" target="_blank">حدث فيسبوك</a>{% endif %} 
+    </div>
+</div>{% endfor %}</div>
+{% endblock %}
