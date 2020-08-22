@@ -16,7 +16,7 @@
         background-image: url('/images/landing/frinds01.jpg');
         background-position: center;
         background-size: cover;
-        padding-top: 15px;
+        padding-top: 20px;
       }
 
       .landing-content {
@@ -28,7 +28,13 @@
       }
 
       .landing-logo {
-        width: 225px;
+        width: 200px;
+      }
+
+      @media (min-width: 375px) {
+        .landing-logo {
+          width: 215px;
+        }
       }
 
       .landing-intro {
@@ -53,7 +59,7 @@
 
       @media (min-width: 768px) {
         .landing-logo {
-          width: 300px;
+          width: 275px;
         }
       }
     </style>
@@ -61,7 +67,7 @@
 
   </head>
   <body class="no-js landing">
-    <div class="landing-content">
+    <main class="landing-content">
         <picture>
           <source
             type="image/webp"
@@ -76,11 +82,11 @@
         </div>
 
       <div>
-        <a class="imbala-button" href="/he" lang="he" hreflang="he">עברית</a>
+        <a class="imbala-button" href="/he" lang="he" hreflang="he" tabindex="0">עברית</a>
         <a class="imbala-button" href="/ar" lang="ar" hreflang="ar">العربية</a>
         <a class="imbala-button" href="/en" lang="en" hreflang="en">English</a>
       </div>
-    </div>
+    </main>
   </body>
   </div>
 </html>

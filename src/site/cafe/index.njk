@@ -14,14 +14,13 @@
     <meta name="description" content="Imbala serves high quality, sustainable, vegan, and reasonably priced food made voluntarily Imbala’s members.">
     <style>
       .landing {
-        min-height: 100vh;
         display: grid;
         grid-template-columns: 1fr [content] 3fr 1fr;
         grid-template-rows: [content] 5fr 0.5fr;
         background-image: url('/images/landing/frinds01.jpg');
         background-position: center;
         background-size: cover;
-        padding-top: 15px;
+        padding-top: 20px;
       }
 
       .landing-content {
@@ -33,8 +32,13 @@
       }
 
       .landing-logo {
-        width: 225px;
-        margin-bottom: 15px;
+        width: 200px;
+      }
+
+      @media (min-width: 375px) {
+        .landing-logo {
+          width: 215px;
+        }
       }
 
       .landing-intro {
@@ -59,14 +63,14 @@
 
       @media (min-width: 768px) {
         .landing-logo {
-          width: 300px;
+          width: 275px;
         }
       }
     </style>
     <link rel="stylesheet" href="/css/imbala.css">
   </head>
   <body class="no-js landing">
-    <div class="landing-content">
+    <main class="landing-content">
         <picture>
           <source
             type="image/webp"
@@ -85,7 +89,7 @@
         <a class="imbala-button" href="/ar/cafe" lang="ar" hreflang="ar">العربية</a>
         <a class="imbala-button" href="/en/cafe" lang="en" hreflang="en">English</a>
       </div>
-    </div>
+    </main>
   </body>
   </div>
 </html>
