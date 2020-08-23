@@ -2,7 +2,7 @@
 title_en: ' Tonight I dreamed of the Prime Minister'
 title_he: הלילה חלמתי על ראש הממשלה
 title_ar: ' الليلة حلمت على رئيس الوزراء'
-date: 2020-08-27T15:00:04.712Z
+date: 2020-08-27T18:00:00.712Z
 description_en: A cabaret journey through real dreams about Benjamin Netanyahu.
 description_he: מסע קברטי אל אוסף של חלומות אמיתיים שחלמו אנשים שונים על בנימין נתניהו
 description_ar: >-
