@@ -27,7 +27,7 @@ module.exports = function (eleventyConfig) {
       includes: '_includes',
       data: '_data',
     },
-    templateFormats: ['njk', 'md'],
+    templateFormats: ['njk', 'md', 'xml', 'txt'],
     markdownTemplateEngine: 'njk',
     passthroughFileCopy: true,
   };
