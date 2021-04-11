@@ -172,10 +172,6 @@
   fill: #833ab4;
 }
 
-.nav-footer__link--github:hover path {
-  fill: #000000b4;
-}
-
 .nav-footer__link--instagram {
   margin-right: 13.5px;
 }
@@ -254,7 +250,7 @@
 
 @media (min-width: 1440px) {
   .nav-footer__link--facebook svg {
-    width: 14px;
+    width: 13.5px;
   }
 
   .nav-footer__link--instagram svg {
