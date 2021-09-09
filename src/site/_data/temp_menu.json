@@ -59,7 +59,8 @@
           "title": "Orange Juice / Lemonade",
           "description": "freshly squeezed",
           "price": {
-            "regular": 8
+            "regular": 12,
+            "member": 10
           }
         },
         {
@@ -161,14 +162,29 @@
           }
         },
         {
-          "title": "עוגיה",
+          "title": "מאפה תרד / חומוס",
+          "description": "המחיר למאפה אחד. אפשר לקבל שני מאפים + ירקות/חמוצים + טחינה ב- 20/25",
+          "price": {
+            "regular": 13,
+            "member": 10
+          }
+        },
+        {
+          "title": "לחם, ממרחים וירקות",
+          "price": {
+            "regular": 20,
+            "member": 12
+          }
+        },
+        {
+          "title": "עוגיה/מעמול",
           "description": "התייאשתם מהעולם? איבדתן רצון לחיות? העוגיות שלנו נאפות במיוחד בשביל מצבים כאלה",
           "price": {
             "regular": "₪ 4 / 3 עוגיות ב- 10"
           }
         },
         {
-          "title": "קאפקייק",
+          "title": "עוגה/קאפקייק",
           "description": "",
           "price": {
             "regular": 10,
@@ -184,26 +200,35 @@
           "title": "מיץ תפוזים / לימונדה",
           "description": "סחוט טרי",
           "price": {
-            "regular": 8
+            "regular": 12,
+            "member": 10
+          }
+        },
+        {
+          "title": "לימונדה / תפוחים",
+          "description": "קנקן ב- 10 / 15",
+          "price": {
+            "regular": 8,
+            "member": 4
           }
         },
         {
           "title": "תה",
           "price": {
-            "regular": "כוס 5 ₪ / קנקן 10"
+            "regular": "כוס 5 ₪ / קנקן 12/15"
           }
         },
         {
           "title": "קפה שחור",
           "price": {
-            "regular": 5,
-            "member": 6
+            "regular": 7,
+            "member": 5
           }
         },
         {
           "title": "אספרסו",
           "price": {
-            "regular": "קצר 8 ₪ / ארוך 9"
+            "regular": "קצר 7 ₪ / ארוך 9"
           }
         },
         {
@@ -221,20 +246,23 @@
         {
           "title": "שוקו חם",
           "price": {
-            "regular": "14"
+            "regular": "14",
+            "member": "10"
           }
         },
         {
           "title": "קפה קר",
           "price": {
-            "regular": "12"
+            "member": 10,
+            "regular": 12
           }
         },
         {
           "title": "תה קר",
           "description": "תוספת שוט ג'ין או וויסקי ב-8 ₪",
           "price": {
-            "regular": "8"
+            "regular": "10",
+            "member": "5"
           }
         }
       ]
@@ -242,10 +270,11 @@
     {
       "title": "אלכוהול",
       "items": [
-        { "title": "½ סאן מיגל (פחית)", "price": { "regular": 18, "member": 15 } },
-        { "title": "⅓ טייבה (בקבוק)", "price": { "regular": 20, "member": 18 } },
-        { "title": "סיידר סבנה", "price": { "regular": 24, "member": 20 } },
-        { "title": "יין אדום / לבן", "price": { "regular": 18, "member": 15 } }
+        { "title": "½ סאן מיגל (פחית)", "price": { "regular": 15, "member": 10 } },
+        { "title": "⅓ טייבה (בקבוק)", "price": { "regular": 15, "member": 10 } },
+        { "title": "ג'ינטוניק", "price": { "regular": 25, "member": 18 } },
+        { "title": "לימונערק", "price": { "regular": 25, "member": 15 } },
+        { "title": "יין אדום / לבן", "price": { "regular": 15, "member": 10 } }
       ]
     }
   ],
