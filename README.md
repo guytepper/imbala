@@ -1,4 +1,4 @@
-# Imbala
+# Imbala 
 
 Imbala's website is being generated using [Eleventy](https://www.11ty.dev/), and hosted on [Netlify](https://netlify.com).
 
